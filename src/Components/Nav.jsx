@@ -9,8 +9,8 @@ function Nav() {
           <h2 className="text-black text-4xl font-bold z-10 ">PA.</h2>
         </div>
 
-        <div className=" text-white text-base z-10  ml-96 pl-44">
-          <ul className="flex space-x-14 lg:pr-10 font-bold">
+        <div className=" text-black text-base z-10  ml-96 pl-44">
+          <ul className="flex space-x-16 lg:pr-10 font-bold">
             <li className="hover:text-black hover:bg-white hover:text-base hover:rounded-xl px-2 py-[5px]">
               About Me
             </li>

@@ -1,30 +1,42 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../App.css';
 import Nav from './Nav';
-import Bg from './Img/Bg.png'
+// import Bg from './Img/Bg.png'
 import Vector from './Img/Vector.png'
 import Vector1 from './Img/Vector1.png'
 import Vector2 from './Img/Vector2.png'
+import Woman from './Img/Woman.png'
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-function header() {
+function Header() {
+
+   useEffect(() => {
+     AOS.init();
+   }, []);
+  
   return (
-    <div className="relative Header">
-      <div>
-        <Nav />
-        <img src={Bg} alt="" className="" />
-        <div className="text-black">
-          <h3 className="font-bold text-4xl leading-8 absolute top-64 left-[29%]  font-serif">
-            Hi, I am
-          </h3>
-          <div className="ease-in duration-300 transition">
-            <h1 className="font--bold text-4xl leading-8 absolute top-80 left-[28.8%] font-serif z-10 ">
-              Princess Ayo<span className="text-white">mide Ogunnaike</span>
+    <div className="  Header">
+      <Nav />
+      <div className="bg-[#d7c0ae] h-screen flex justify-between">
+        <div className="text-black pt-56 pl-12 space-y-10">
+          <div
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
+            <h3 className="font-bold text-4xl leading-8 font-serif">
+              Hi, I am
+            </h3>
+
+            <h1 className=" text-5xl leading-8 pt-5 font-serif mt-10 z-10 ">
+              Princess Ayomide Ogunnaike
             </h1>
           </div>
-          <p className="text-[#909090] text-lg leading-7 absolute top-[53%] left-[29%] font-semibold">
+          <p className="text-gray-600 text-lg leading-7 pt-5 font-semibold">
             Front-end Developer
           </p>
-          <div className="absolute top-[70%] left-[29%] grid grid-cols-3 gap-2">
+          <div className="grid grid-cols-3 w-32 gap-2 pt-5">
             <a href="https://github.com/Princessayomide53?tab=repositories">
               <img src={Vector} alt="" className="hover:animate-bounce" />
             </a>
@@ -37,9 +49,12 @@ function header() {
             </a>
           </div>
         </div>
+        <div>
+          <img src={Woman} alt="" className="pt-32 w-[80%] " />
+        </div>
       </div>
     </div>
   );
 }
 
-export default header
+export default Header

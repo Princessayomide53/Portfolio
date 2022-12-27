@@ -1,5 +1,5 @@
 import './App.css';
-import Aboutme from './Components/Aboutme';
+// import Aboutme from './Components/Aboutme';
 import Header from './Components/Header';
 
 
@@ -11,7 +11,7 @@ function App() {
     
         <Header />
    
-        <Aboutme />
+        {/* <Aboutme /> */}
     
 
       

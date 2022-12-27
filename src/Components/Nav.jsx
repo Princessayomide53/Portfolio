@@ -3,16 +3,16 @@ import '../App.css'
 
 function Nav() {
   return (
-    <div className="relative z-10 Nav"> 
-      <div className="flex justify-between p-3 z-10 absolute left-5 top-1">
+    <div className=" z-10 Nav"> 
+      <div className="flex justify-between p-3 z-10 ">
         <div className="lg:pl-10 z-10">
-          <h2 className="text-black text-4xl font-bold z-10 ">PA.</h2>
+          <h2 className="text-transparent bg-clip-text bg-gradient-to-tr from-purple-500 to-red-300 text-4xl font-bold z-10 ">PA.</h2>
         </div>
 
-        <div className=" text-black text-base z-10  ml-96 pl-44">
+        <div className=" text-white text-base z-10 ">
           <ul className="flex space-x-16 lg:pr-10 font-bold">
             <li className="hover:text-black hover:bg-white hover:text-base hover:rounded-xl px-2 py-[5px]">
-              About Me
+              Resume
             </li>
             {/* <li className="hover:text-black hover:bg-white hover:text-base hover:rounded-xl px-2 py-[5px]">
               Skills

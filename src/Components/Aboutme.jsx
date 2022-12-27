@@ -3,10 +3,10 @@ import '../App.css'
 
 function Aboutme() {
   return (
-    <div className="bg-gray-200  pt-20 Aboutus">
-      <div className="flex justify-center">
+    <div className="bg-black text-white  pt-20 Aboutus">
+      <div className="flex justify-center ">
         <h2 className=" text-2xl font-bold border-4 border-bold py-[15px] px-10 border-black leading-7 tracking-widest mb-10">
-          ABOUT <span className="pl-1">ME</span>
+          SKILLS 
         </h2>
       </div>
 

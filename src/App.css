@@ -23,6 +23,10 @@ clip-path: polygon(56% 0, 100% 0%, 100% 100%, 10% 100%);
   font-family: 'Montserrat', sans-serif;
 }
 
+.Form {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .Header {
   font-family: 'Montserrat', sans-serif;
 }
@@ -30,3 +34,15 @@ clip-path: polygon(56% 0, 100% 0%, 100% 100%, 10% 100%);
 .Aboutus {
   font-family: 'Montserrat', sans-serif;
 }
+
+.Project {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* .Particles {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: 10px;
+} */

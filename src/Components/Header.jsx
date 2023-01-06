@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react'
+import React from 'react';
+import { useEffect } from 'react';
 import '../App.css';
 import Nav from './Nav';
 // import Bg from './Img/Bg.png'
@@ -24,13 +25,13 @@ function Header() {
       <div className="flex justify-between">
         <div className="text-white pt-36 pl-12 space-y-10">
           <div
-            data-aos="fade-right"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine"
+          // data-aos="fade-right"
+          // data-aos-offset="300"
+          // data-aos-easing="ease-in-sine"
           >
             <h3 className="font-bold text-lg leading-8 font-serif">Hey, I'm</h3>
 
-            <h1 className=" text-5xl font-bold leading-8 font-serif mt-10 pb-8 z-10 text-transparent bg-clip-text bg-gradient-to-br from-purple-700 to-red-300 ">
+            <h1 className=" text-5xl font-bold leading-8 font-serif mt-10 pb-8 z-10 text-transparent bg-clip-text bg-gradient-to-br from-[#0093e9] to-[#80d0c7] ">
               Princess Ayomide Ogunnaike
             </h1>
           </div>
@@ -49,8 +50,8 @@ function Header() {
             <br /> new technologies, opportunies and interesting projects. I
             love to be challenged
           </p>
-          <button className="px-10 flex gap-3 py-1 border-2 border-white text-white hover:bg-gradient-to-br from-purple-700 to-red-300">
-            Say HI <AiOutlineArrowRight />
+          <button className="px-10 text-base flex gap-3 py-1 border-2 border-white text-white hover:bg-gradient-to-br from-[#0093e9] to-[#80d0c7]">
+            Say Hi <AiOutlineArrowRight className="pt-[5px] w-5 h-5" />
           </button>
 
           {/* <p className="text-gray-600 text-lg leading-7 pt-5 font-semibold">

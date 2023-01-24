@@ -3,14 +3,15 @@ import { useEffect } from 'react';
 import '../App.css';
 import Nav from './Nav';
 // import Bg from './Img/Bg.png'
-// import Vector from './Img/Vector.png'
-// import Vector1 from './Img/Vector1.png'
-// import Vector2 from './Img/Vector2.png'
+
 import Woman from './Img/Woman.png'
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Typed from "react-typed";
 import { AiOutlineArrowRight } from "react-icons/ai";
+import { AiOutlineDownload } from "react-icons/ai";
+import Resume from "./Img/Resume.pdf"
+
 
 
 function Header() {
@@ -22,37 +23,77 @@ function Header() {
   return (
     <div className="bg-black h-screen Header">
       <Nav />
-      <div className="flex justify-between">
-        <div className="text-white pt-36 pl-12 space-y-10">
+      <div className="flex justify-between ">
+        <div className="text-white lg:pt-36 pt-32 pl-5 lg:pl-12 space-y-10">
           <div
-          // data-aos="fade-right"
-          // data-aos-offset="300"
-          // data-aos-easing="ease-in-sine"
+            className="animate ease-in 10s"
+            // data-aos="fade-right"
+            // data-aos-offset="300"
+            // data-aos-easing="ease-in-sine"
           >
-            <h3 className="font-bold text-lg leading-8 font-serif">Hey, I'm</h3>
+            <h3 className="font-bold  text-lg leading-8 font-serif pl-4 md:pl-16 lg:pl-0">
+              Hey, I'm
+            </h3>
 
-            <h1 className=" text-5xl font-bold leading-8 font-serif mt-10 pb-8 z-10 text-transparent bg-clip-text bg-gradient-to-br from-[#0093e9] to-[#80d0c7] ">
+            <h1 className="lg:text-5xl pl-4 text-4xl font-bold leading-8 font-serif mt-10 pb-8 z-10 text1 md:pl-16 lg:pl-0">
               Princess Ayomide Ogunnaike
             </h1>
           </div>
           <Typed
             strings={["Software Engineer | Front-end Developer"]}
-            className="text-gray-300 text-lg leading-7 pt-10 font-semibold"
+            className="text-gray-300 pl-4 lg:pl-0 lg:text-lg text-sm leading-7 lg:pt-10 pt-5 font-semibold md:pl-16 "
             typeSpeed={120}
             backSpeed={120}
             loop
           />
+          <div
+            className="text-justify hidden sm:hidden lg:block md:hidden"
+            id="hash-link-aboutme"
+          >
+            <p className="text-justify  lg:text-base text-sm md:text-base lg:mt-2 mt-1 lg:leading-9 leading-7 flex-wrap space-y-5 pr-5">
+              I'm Princess, a Frontend Developer based in Lagos, Nigeria. I have
+              substantial <br />
+              knowledge of HTML, CSS, JavaScript and React. I am highly
+              motivated to expand
+              <br /> my skills and currently working towards becoming a full
+              stack developer. my
+              <br /> passion for coding and problem solving enables me to create
+              visually appealing
+              <br /> and user-friendly websites. I am excited to continue to
+              grow my skills and make
+              <br /> positive impact in the field of web development.
+              {/* <br /> new technologies, opportunies and interesting projects. I
+            love to be challenged */}
+            </p>
+          </div>
 
-          <p className="text-justify text-base mt-2 leading-9 space-y-3">
-            I'm Princess, a Frontend Developer based in Lagos, Nigeria. I have
-            substantial <br />
-            knowledge of HTML, CSS, JavaScript and React. I am open to learning
-            <br /> new technologies, opportunies and interesting projects. I
-            love to be challenged
-          </p>
-          <button className="px-10 text-base flex gap-3 py-1 border-2 border-white text-white hover:bg-gradient-to-br from-[#0093e9] to-[#80d0c7]">
-            Say Hi <AiOutlineArrowRight className="pt-[5px] w-5 h-5" />
-          </button>
+          <div className="lg:hidden md:block block md:pl-16 md:pr-20 pl-5 pr-5">
+            <p className="text-justify lg:text-base text-sm md:text-base lg:mt-2 mt-1 leading-8  md:leading-9 flex-wrap md:space-y-14 pr-5">
+              I'm Princess, a Frontend Developer based in Lagos, Nigeria. I have
+              substantial knowledge of HTML, CSS, JavaScript and React. I am
+              highly motivated to expand my skills and currently working towards
+              becoming a full stack developer. my passion for coding and problem
+              solving enables me to create visually appealing and user-friendly
+              websites. I am excited to continue to grow my skills and make
+              positive impact in the field of web development.
+            </p>
+          </div>
+
+          <div className="lg:flex md:flex space-y-8 lg:space-y-0 lg:space-x-20   md:space-x-96 md:pl-16 pl-5 lg:pl-0">
+            <button
+              className="px-10 text-base flex gap-3 py-3 border-2 border-[#80d0c7] hover:bg-[#80d0c7]  text-white "
+              id="hash-link-contactme"
+            >
+              Say Hi <AiOutlineArrowRight className="pt-[5px] w-5 h-5" />
+            </button>
+
+            <button className="px-10 text-base flex gap-3 py-2 border-2 border-[#80d0c7] hover:bg-[#80d0c7]  text-white ">
+              <a href={Resume} download="Resume" className="flex gap-3">
+                Download Resume{" "}
+                <AiOutlineDownload className="pt-[5px] w-5 h-5" />
+              </a>
+            </button>
+          </div>
 
           {/* <p className="text-gray-600 text-lg leading-7 pt-5 font-semibold">
             
@@ -82,8 +123,8 @@ function Header() {
             </a>
           </div> */}
         </div>
-        <div>
-          <img src={Woman} alt="" className="pt-20 w-[90%] " />
+        <div className="md:hidden hidden lg:block">
+          <img src={Woman} alt="" className="pt-20 w-[90%]" />
         </div>
       </div>
     </div>

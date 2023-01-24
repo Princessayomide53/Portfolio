@@ -1,8 +1,11 @@
+import React from 'react';
 import './App.css';
 import Aboutme from './Components/Aboutme';
 import Header from './Components/Header';
 import Project from './Components/Projects';
-import ParticlesBackground from './Components/ParticlesBackground';
+// import { Particles } from 'react-particles-js';
+// import Form from './Components/Form'
+// import ParticlesBackground from './Components/ParticlesBackground';
 // import Form from './Components/Form'
 // import Particles from 'react-particles';
 
@@ -12,8 +15,27 @@ import ParticlesBackground from './Components/ParticlesBackground';
 function App() {
   return (
     <>
-      <div className='Particles'>
-      <ParticlesBackground />
+      <div className=''>
+{/* <Particles
+    params={{
+        particles: {
+            number: {
+                value: 100,
+            },
+            size: {
+                value: 3,
+            },
+        },
+        interactivity: {
+            events: {
+                onhover: {
+                    enable: true,
+                    mode: "repulse",
+                },
+            },
+        },
+    }}
+/> */}
 
          <Header />
    
@@ -21,20 +43,7 @@ function App() {
     
         <Project />
         {/* <Form /> */}
-      {/* </ParticlesContainer> */}
-    {/* <Particles
-        params={{
-          particles: {
-            number: {
-              value: 200,
-              density: {
-                enable: true,
-                value_area: 1000,
-              }
-            },
-          },
-        }}
-      /> */}
+  
   
     
         

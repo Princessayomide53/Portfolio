@@ -16,7 +16,7 @@ function Aboutme() {
       className="bg-black text-white  Aboutus"
       id="hash-link-technologies"
     >
-      <div className="lg:pt-28 pt-52 md:pt-14 flex justify-center">
+      <div className="lg:pt-28 pt-56 md:pt-20 flex justify-center">
         <h2 className="border-4 border-[#80d0c7] lg:mb-8 mb-5 px-5 font-semibold hover:text-[#ff4b1f] py-3">
           TECHNOLOGIES
         </h2>
@@ -27,7 +27,7 @@ function Aboutme() {
         </h2>
       </div> */}
 
-      <div className="lg:flex pl-10 md:pl-20 lg:pl-0 lg:justify-around grid grid-cols-3 md:gap-36 gap-8 p-5 lg:p-0 mt-10">
+      <div className="lg:flex pl-10 md:pl-20 lg:pl-10 lg:pr-10 lg:justify-around grid grid-cols-3 md:gap-36 gap-8 p-5 lg:p-0 mt-10">
         <img src={HTML5} alt="" className="w-18 h-12" />
         <img src={Css} alt="" className="w-18 h-12" />
         <img src={Tailwind} alt="" className="w-20 h-12" />

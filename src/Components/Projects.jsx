@@ -6,9 +6,11 @@ import '../App.css'
 import Metabnbb from "./Img/Metabnbb 1.png";
 import Repute from './Img/Repute.png'
 import { TiAttachmentOutline } from "react-icons/ti";
- import Vector from './Img/Vector.png'
- import Vector1 from './Img/Vector1.png'
- import Vector2 from './Img/Vector2.png'
+import { AiOutlinePhone } from "react-icons/ai";
+import { AiOutlineGithub } from "react-icons/ai";
+import { AiOutlineMail } from "react-icons/ai";
+import { AiOutlineLinkedin } from "react-icons/ai";
+
 // import HashLink from 'react-router-hash-link'
 
 
@@ -17,7 +19,7 @@ function Projects() {
   return (
     <section>
       <div className="bg-black Projects" id="hash-link-projects">
-        <div className="flex flex-col items-center pt-24 gap-14 ">
+        <div className="flex flex-col items-center pt-24 gap-14 lg:mb-5">
           <p className="text-white border-4 mb-5 lg:mb-0 px-10 border-[#80d0c7] font-medium text-lg hover:text-[#ff4b1f] py-2">
             Projects
           </p>
@@ -112,7 +114,11 @@ function Projects() {
 
             <div>
               <div className="border-2 border-white ">
-                <a href="metabnb1.netlify.app">
+                <a
+                  href="metabnb1.netlify.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img src={Metabnbb} alt="" className="md:w-full" />
                 </a>
               </div>
@@ -137,7 +143,11 @@ function Projects() {
 
             <div>
               <div className="border-2 border-white ">
-                <a href="https://www.repute.legal/">
+                <a
+                  href="metabnb1.netlify.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img src={Repute} alt="" className="md:w-full" />
                 </a>
               </div>
@@ -162,26 +172,54 @@ function Projects() {
             </div>
           </div>
         </div>
-      </div>
+        <div className="pb-10 bg-black flex justify-center">
+          <hr style={{ width: "90%", color: "white", height: "8px" }} />
+        </div>
+        <div className="text-white hover:text-[#ff4b1f] text-2xl  flex justify-center pt-5 pb-10">
+          Contact
+        </div>
+        <div className="lg:flex space-x-0 space-y-5 lg:space-y-0 justify-around pt-5 pb-20">
+          <div className="py-[7px] px-10 border-2 border-[#80d0c7] flex">
+            <a href="08076824974" className="flex mt-1 gap-3">
+              <AiOutlinePhone className="text-white" size={30} />
+              <p className="text-white  text-lg">Phone</p>
+            </a>
+          </div>
 
-      <div className="pb-10 bg-black flex justify-center">
-        <hr style={{ width: "90%", color: "white", height: "8px" }} />
-      </div>
-      <div className="grid grid-cols-3 w-32 gap-5 pt-5 ">
-        <a href="https://github.com/Princessayomide53?tab=repositories">
-          <img
-            src={Vector}
-            alt=""
-            className="hover:animate-bounce fill-white"
-          />
-        </a>
-        <a href="https://mail.com/Payomide53@gmail.com">
-          <img src={Vector1} alt="" className="hover:animate-bounce bg-white" />
-        </a>
-
-        <a href="https://www.linkedin.com/in/princess-ayomide-ogunnaike-235b25211">
-          <img src={Vector2} alt="" className="hover:animate-bounce bg-white" />
-        </a>
+          <div className="py-[7px] px-10 border-2 border-[#80d0c7]">
+            <a
+              href="https://github.com/Princessayomide53?tab=repositories"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex mt-1 gap-3"
+            >
+              <AiOutlineGithub className="text-white" size={30} />
+              <p className="text-white  text-lg">Github</p>
+            </a>
+          </div>
+          <div className="py-[7px] px-7 border-2 border-[#80d0c7]">
+            <a
+              href="metabnb1.netlify.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex mt-1 gap-3"
+            >
+              <AiOutlineMail className="text-white" size={30} />
+              <p className="text-white  text-lg">Send a Mail</p>
+            </a>
+          </div>
+          <div className="py-[7px] px-7 border-2 border-[#80d0c7]">
+            <a
+              href="https://www.linkedin.com/in/princess-ayomide-ogunnaike-235b25211"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex mt-1 gap-3"
+            >
+              <AiOutlineLinkedin className="text-white" size={30} />
+              <p className="text-white text-lg">LinkedIn</p>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );

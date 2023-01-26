@@ -6,7 +6,7 @@ import Project from './Components/Projects';
 // import { Particles } from 'react-particles-js';
 // import Form from './Components/Form'
 // import ParticlesBackground from './Components/ParticlesBackground';
-// import Form from './Components/Form'
+// import Modal from './Components/Modal'
 // import Particles from 'react-particles';
 
 
@@ -41,8 +41,9 @@ function App() {
    
         <Aboutme />
     
-        <Project />
-        {/* <Form /> */}
+         <Project />
+              
+         {/* <Modal />  */}
   
   
     

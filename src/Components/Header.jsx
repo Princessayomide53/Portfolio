@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useEffect } from 'react';
 import '../App.css';
 import Nav from './Nav';
@@ -11,6 +11,7 @@ import Typed from "react-typed";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { AiOutlineDownload } from "react-icons/ai";
 import Resume from "./Img/Resume.pdf"
+import Modal from './Modal';
 
 
 
@@ -20,6 +21,7 @@ function Header() {
      AOS.init();
    }, []);
   
+   const [openModal, setOpenModal] = useState(false);
   return (
     <div className="bg-black h-screen Header">
       <Nav />
@@ -79,10 +81,11 @@ function Header() {
             </p>
           </div>
 
-          <div className="lg:flex md:flex space-y-8 lg:space-y-0 lg:space-x-20   md:space-x-96 md:pl-16 pl-5 lg:pl-0">
+          <div className="lg:flex space-y-8 lg:space-y-0 lg:space-x-20  md:pl-16 pl-5 lg:pl-0">
             <button
               className="px-10 text-base flex gap-3 py-3 border-2 border-[#80d0c7] hover:bg-[#80d0c7]  text-white "
               id="hash-link-contactme"
+              onClick={() => setOpenModal(true)}
             >
               Say Hi <AiOutlineArrowRight className="pt-[5px] w-5 h-5" />
             </button>
@@ -94,6 +97,8 @@ function Header() {
               </a>
             </button>
           </div>
+
+          <Modal open={openModal} onClose={() => setOpenModal(false)} />
 
           {/* <p className="text-gray-600 text-lg leading-7 pt-5 font-semibold">
             

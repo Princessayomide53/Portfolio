@@ -89,7 +89,7 @@ color: #000;
   align-items: flex-end;
   justify-content: space-between;
   cursor: pointer;
-  /* background-color: purple; */
+  background-color: purple;
 }
 
 .burger-bar{
@@ -134,4 +134,8 @@ color: #000;
 .burger-bar.unclicked{
   transform: rotate(0) translate(0);
   transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+}
+
+.modal{
+  margin-left: 0px;
 }

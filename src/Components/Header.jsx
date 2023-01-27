@@ -23,7 +23,7 @@ function Header() {
   
    const [openModal, setOpenModal] = useState(false);
   return (
-    <div className="bg-black h-screen Header">
+    <div className="bg-black  Header">
       <Nav />
       <div className="flex justify-between ">
         <div className="text-white lg:pt-36 pt-32 pl-5 lg:pl-12 space-y-10">

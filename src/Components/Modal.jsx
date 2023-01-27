@@ -6,15 +6,15 @@ const Modal = ({ open, onClose }) => {
   return (
     <div
       class="modal"
-      className="flex flex-col justify-center z-10 items-center ml-0 fixed bg-[#2e2b2b] bg-opacity-60 inset-0 w-full h-screen"
+      className="flex flex-col -mt-5 justify-center z-10 items-center ml-0 fixed bg-[#2e2b2b] bg-opacity-60 inset-0 w-full h-screen"
     >
-      <div className="bg-black w-[70%] h-screen  rounded-md">
-        <div className=" mr-auto text-2xl">
-          <button onClick={onClose}>X</button>
+      <div className="bg-black lg:w-[70%] md:w-[80%] w-full h-screen  rounded-md">
+        <div className="flex justify-end mt-5 pr-5 text-3xl z-10">
+          <button className='text-white' onClick={onClose}>X</button>
         </div>
         <div className="flex justify-center Form">
           <div className="bg-black rounded-md w-[70%] flex flex-col justify-center items-center">
-            <div className="w-[70%] mt-10">
+            <div className="lg:w-[70%] w-[90%] mt-10">
               <input
                 type="text"
                 placeholder="Enter Your Name*"
@@ -22,7 +22,7 @@ const Modal = ({ open, onClose }) => {
               />
             </div>
 
-            <div className="w-[70%] mt-10">
+            <div className="lg:w-[70%] w-[90%] mt-10">
               <input
                 type="text"
                 placeholder="Enter Your Email*"
@@ -30,7 +30,7 @@ const Modal = ({ open, onClose }) => {
               />
             </div>
 
-            <div className="w-[70%] mt-10">
+            <div className="lg:w-[70%] w-[90%] mt-10">
               <input
                 type="text"
                 placeholder="Phone Number*"
@@ -38,16 +38,16 @@ const Modal = ({ open, onClose }) => {
               />
             </div>
 
-            <div className="w-[70%] mt-10">
+            <div className="lg:w-[70%] w-[90%] mt-10">
               <textarea
                 placeholder="Your Message*"
-                className=" border-[#80d0c7] focus:outline-[#80d0c7] border-2 w-full h-36 rounded-md mb-32 bg-black
+                className=" border-[#80d0c7] focus:outline-[#80d0c7] border-2 w-full h-36 rounded-md  bg-black
           "
               ></textarea>
             </div>
 
-            <div>
-              <button className="text-xl bg-[#ff4b1f] text-white px-5 py-1">
+            <div className="mt-10">
+              <button className="text-xl bg-[#ff4b1f] rounded-tr-md text-white px-8 py-2 hover:bg-[#80d0c7]">
                 Submit
               </button>
             </div>

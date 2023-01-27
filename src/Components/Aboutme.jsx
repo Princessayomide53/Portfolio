@@ -16,7 +16,7 @@ function Aboutme() {
       className="bg-black text-white  Aboutus"
       id="hash-link-technologies"
     >
-      <div className="lg:pt-28 pt-56 md:pt-20 flex justify-center">
+      <div className="lg:pt-28 pt-52 sm:pt-52 md:pt-20 flex justify-center">
         <h2 className="border-4 border-[#80d0c7] lg:mb-8 mb-5 px-5 font-semibold hover:text-[#ff4b1f] py-3">
           TECHNOLOGIES
         </h2>

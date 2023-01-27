@@ -89,7 +89,7 @@ color: #000;
   align-items: flex-end;
   justify-content: space-between;
   cursor: pointer;
-  background-color: purple;
+  /* background-color: purple; */
 }
 
 .burger-bar{
@@ -136,6 +136,19 @@ color: #000;
   transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
 }
 
-.modal{
-  margin-left: 0px;
+.slide-in-left {
+  animation-name: slideInFromLeft;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
 }
+
+@keyframes slideInFromLeft {
+  from { transform: translateX(-100%);}
+  to { transform: translateX(0%); }
+
+  
+}
+
+
+
+

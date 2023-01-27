@@ -28,16 +28,15 @@ function Header() {
       <div className="flex justify-between ">
         <div className="text-white lg:pt-36 pt-32 pl-5 lg:pl-12 space-y-10">
           <div
-            className="animate ease-in 10s"
-            // data-aos="fade-right"
-            // data-aos-offset="300"
-            // data-aos-easing="ease-in-sine"
+            //  data-aos="fade-right"
+            //  data-aos-offset="300"
+            //  data-aos-easing="ease-in-sine"
           >
-            <h3 className="font-bold  text-lg leading-8 font-serif pl-4 md:pl-16 lg:pl-0">
+            <h3 className="font-bold text-lg leading-8 font-serif pl-4 md:pl-16 lg:pl-0">
               Hey, I'm
             </h3>
 
-            <h1 className="lg:text-5xl pl-4 text-4xl font-bold leading-8 font-serif mt-10 pb-8 z-10 text1 md:pl-16 lg:pl-0">
+            <h1 className="slide-in-left lg:text-5xl pl-4 text-4xl font-bold leading-8 font-serif mt-10 pb-8 z-10 text1 md:pl-16 lg:pl-0">
               Princess Ayomide Ogunnaike
             </h1>
           </div>
@@ -50,7 +49,7 @@ function Header() {
           />
           <div
             className="text-justify hidden sm:hidden lg:block md:hidden"
-            id="hash-link-aboutme"
+            id="hash-link-about"
           >
             <p className="text-justify  lg:text-base text-sm md:text-base lg:mt-2 mt-1 lg:leading-9 leading-7 flex-wrap space-y-5 pr-5">
               I'm Princess, a Frontend Developer based in Lagos, Nigeria. I have
@@ -81,10 +80,10 @@ function Header() {
             </p>
           </div>
 
-          <div className="lg:flex space-y-8 lg:space-y-0 lg:space-x-20  md:pl-16 pl-5 lg:pl-0">
+          <div className="lg:flex space-y-5 lg:space-y-0 lg:space-x-20  md:pl-16 pl-5 lg:pl-0">
             <button
               className="px-10 text-base flex gap-3 py-3 border-2 border-[#80d0c7] hover:bg-[#80d0c7]  text-white "
-              id="hash-link-contactme"
+              // id="hash-link-contactme"
               onClick={() => setOpenModal(true)}
             >
               Say Hi <AiOutlineArrowRight className="pt-[5px] w-5 h-5" />
@@ -129,7 +128,7 @@ function Header() {
           </div> */}
         </div>
         <div className="md:hidden hidden lg:block">
-          <img src={Woman} alt="" className="pt-20 w-[90%]" />
+          <img src={Woman} alt="" className="pt-40 w-[90%]" />
         </div>
       </div>
     </div>

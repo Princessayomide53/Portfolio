@@ -42,7 +42,7 @@ function Nav() {
         <div className=" text-white text-base z-10 lg:block hidden pt-5">
           <ul className="flex space-x-16 lg:pr-10 font-bold">
             <li className="hover:text-base hover:text-[#ff4b1f]">
-              <a smooth href="#hash-link-aboutme">
+              <a smooth href="#hash-link-about">
                 About me
               </a>
             </li>
@@ -78,7 +78,7 @@ function Nav() {
           </div>
         </div>
 
-        <div className="fixed  w-full h-full">
+        <div className="w-full h-full">
           <div className={menu_class}>
             <div className="text-white fixed">
               <ul className="space-y-8 p-5 -mt-28 absolute top-72 left-20">
@@ -88,9 +88,9 @@ function Nav() {
                   transition={{ delay: 0.10 }}
                   className="border-b-2 pb-1 border-gray-500 w-56 hover:text-[#ff4b1f]"
                 >
-                  <a smooth href="#hash-link-aboutme">
+                  {/* <a smooth href="#hash-link-aboutme"> */}
                     About Me
-                  </a>
+                  {/* </a> */}
                 </motion.li>
                 <motion.li
                   initial={animateFrom}
@@ -98,9 +98,9 @@ function Nav() {
                   transition={{ delay: 0.15 }}
                   className="border-b-2 pb-1 border-gray-500 w-56 hover:text-[#ff4b1f]"
                 >
-                  <a smooth href="#hash-link-aboutme">
+                  {/* <a smooth href="#hash-link-aboutme"> */}
                     Technologies
-                  </a>
+                  {/* </a> */}
                 </motion.li>
                 <motion.li
                   initial={animateFrom}
@@ -108,9 +108,9 @@ function Nav() {
                   transition={{ delay: 0.20 }}
                   className="border-b-2 pb-1 border-gray-500 w-56 hover:text-[#ff4b1f]"
                 >
-                  <a smooth href="#hash-link-aboutme">
+                  {/* <a smooth href="#hash-link-projects"> */}
                     Projects
-                  </a>
+                  {/* </a> */}
                 </motion.li>
               </ul>
             </div>

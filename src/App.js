@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
-import Aboutme from './Components/Aboutme';
 import Header from './Components/Header';
 import Project from './Components/Projects';
+import Technologies from './Components/Technologies';
 // import { Particles } from 'react-particles-js';
 // import Form from './Components/Form'
 // import ParticlesBackground from './Components/ParticlesBackground';
@@ -39,7 +39,7 @@ function App() {
 
          <Header />
    
-        <Aboutme />
+        <Technologies />
     
          <Project />
               

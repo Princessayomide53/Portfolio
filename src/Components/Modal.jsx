@@ -9,7 +9,7 @@ const Modal = ({ open, onClose }) => {
       className="flex flex-col -mt-5 justify-center z-10 items-center ml-0 fixed bg-[#2e2b2b] bg-opacity-60 inset-0 w-full h-screen"
     >
       <div className="bg-black lg:w-[70%] md:w-[80%] w-full h-screen  rounded-md">
-        <div className="flex justify-end mt-5 pr-5 text-3xl z-10">
+        <div className="flex justify-end lg:mt-5 mt-1 pr-5 text-3xl z-10">
           <button className='text-white' onClick={onClose}>X</button>
         </div>
         <div className="flex justify-center Form">
@@ -46,7 +46,7 @@ const Modal = ({ open, onClose }) => {
               ></textarea>
             </div>
 
-            <div className="mt-10">
+            <div className="lg:mt-10 mt-5">
               <button className="text-xl bg-[#ff4b1f] rounded-tr-md text-white px-8 py-2 hover:bg-[#80d0c7]">
                 Submit
               </button>

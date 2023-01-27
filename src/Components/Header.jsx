@@ -80,7 +80,7 @@ function Header() {
             </p>
           </div>
 
-          <div className="lg:flex space-y-5 lg:space-y-0 lg:space-x-20  md:pl-16 pl-5 lg:pl-0">
+          <div className="lg:flex space-y-5 lg:space-y-0 lg:space-x-20  md:pl-16 pl-5 lg:pl-0  ">
             <button
               className="px-10 text-base flex gap-3 py-3 border-2 border-[#80d0c7] hover:bg-[#80d0c7]  text-white "
               // id="hash-link-contactme"

@@ -10,11 +10,13 @@ const Modal = ({ open, onClose }) => {
     >
       <div className="bg-black lg:w-[70%] md:w-[80%] w-full h-screen  rounded-md">
         <div className="flex justify-end lg:mt-5 mt-1 pr-5 text-3xl z-10">
-          <button className='text-white' onClick={onClose}>X</button>
+          <button className="text-white" onClick={onClose}>
+            X
+          </button>
         </div>
-        <div className="flex justify-center Form">
+        <div className="flex justify-center Form -mt-3 lg:-mt-0 md:-mt-0">
           <div className="bg-black rounded-md w-[70%] flex flex-col justify-center items-center">
-            <div className="lg:w-[70%] w-[90%] mt-10">
+            <div className="lg:w-[70%] w-[100%] mt-10">
               <input
                 type="text"
                 placeholder="Enter Your Name*"
@@ -22,7 +24,7 @@ const Modal = ({ open, onClose }) => {
               />
             </div>
 
-            <div className="lg:w-[70%] w-[90%] mt-10">
+            <div className="lg:w-[70%] w-[100%] mt-10">
               <input
                 type="text"
                 placeholder="Enter Your Email*"
@@ -30,7 +32,7 @@ const Modal = ({ open, onClose }) => {
               />
             </div>
 
-            <div className="lg:w-[70%] w-[90%] mt-10">
+            <div className="lg:w-[70%] w-[100%] mt-10">
               <input
                 type="text"
                 placeholder="Phone Number*"
@@ -38,7 +40,7 @@ const Modal = ({ open, onClose }) => {
               />
             </div>
 
-            <div className="lg:w-[70%] w-[90%] mt-10">
+            <div className="lg:w-[70%] w-[100%] mt-10">
               <textarea
                 placeholder="Your Message*"
                 className=" border-[#80d0c7] focus:outline-[#80d0c7] border-2 w-full h-36 rounded-md  bg-black

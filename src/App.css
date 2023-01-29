@@ -97,6 +97,8 @@ color: #000;
   height: 0.5em;
   background-color: white;
   border-radius: 0.5em;
+  overflow: hidden;
+  /* padding-right: 10px; */
 }
 
 .menu {
@@ -150,5 +152,7 @@ color: #000;
 }
 
 
-
+.modal {
+  margin-top: 0px;
+}
 

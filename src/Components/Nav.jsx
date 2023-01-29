@@ -4,19 +4,20 @@ import '../App.css'
 // import { AiOutlineClose  } from "react-icons/ai";
 import { motion } from "framer-motion"
 // import { HashLink } from "react-router-hash-link";
+import {  Squash as Hamburger } from 'hamburger-react';
 
 
 function Nav() {
 
-  // const [nav, setNav] = useState(false);
+  const [nav, setNav] = useState(false);
 
   const [burger_class, setBurgerClass] = useState("burger-bar unclicked");
   const [menu_class, setMenuClass] = useState("menu hidden1")
   const [isMenuClicked, setIsMenuClicked] = useState(false);
 
-  // const handleNav = () => {
-  //   setNav(!nav);
-  // };
+  const handleNav = () => {
+    setNav(!nav);
+  };
 
   const updateMenu = () => {
     if (!isMenuClicked) {
@@ -48,7 +49,7 @@ function Nav() {
             </li>
             <li className="hover:text-base hover:text-[#ff4b1f]">
               <a smooth href="#hash-link-technologies">
-                technologies
+                Technologies
               </a>
             </li>
 
@@ -57,17 +58,69 @@ function Nav() {
                 Projects
               </a>
             </li>
+
             <li className="hover:text-base hover:text-[#ff4b1f]">
-              <a smooth href="#hash-link-contactme">
-                Contact Me
+              <a smooth href="#hash-link-calls">
+                Contacts
               </a>
             </li>
           </ul>
         </div>
       </div>
 
-      <div className="wrap lg:hidden md:block  block">
-        <div className="nav1 flex justify-between">
+      <div className='lg:hidden block'>
+      <div className="flex justify-between bg-black pt-2 pb-2 fixed w-full z-10">
+        <div className=" pl-7 pt-2">
+          <h2 className="text1 text-4xl font-bold ">PA.</h2>
+        </div>
+        <Hamburger
+          direction="squash"
+          size={30}
+          color="white"
+          className="burger-menu"
+          onToggle={updateMenu}
+        />
+      </div>
+      <div className={menu_class}>
+        <div className="text-white">
+          <ul className="space-y-8 p-5 -mt-28 absolute top-72 left-20">
+            <motion.li
+              initial={animateFrom}
+              animate={animateTo}
+              transition={{ delay: 0.1 }}
+              className="border-b-2 pb-1 border-gray-500 w-56 hover:text-[#ff4b1f]"
+            >
+              {/* <a smooth href="#hash-link-aboutme"> */}
+              About Me
+              {/* </a> */}
+            </motion.li>
+            <motion.li
+              initial={animateFrom}
+              animate={animateTo}
+              transition={{ delay: 0.15 }}
+              className="border-b-2 pb-1 border-gray-500 w-56 hover:text-[#ff4b1f]"
+            >
+              {/* <a smooth href="#hash-link-aboutme"> */}
+              Technologies
+              {/* </a> */}
+            </motion.li>
+            <motion.li
+              initial={animateFrom}
+              animate={animateTo}
+              transition={{ delay: 0.2 }}
+              className="border-b-2 pb-1 border-gray-500 w-56 hover:text-[#ff4b1f]"
+            >
+              {/* <a smooth href="#hash-link-projects"> */}
+              Projects
+              {/* </a> */}
+            </motion.li>
+          </ul>
+        </div>
+      </div>
+      </div>
+      
+      {/* <div className="wrap lg:hidden md:block  block">
+        <div className="nav1 flex justify-between mt-20">
           <div className=" pl-7 pt-2">
             <h2 className="text1 text-4xl font-bold ">PA.</h2>
           </div>
@@ -80,43 +133,13 @@ function Nav() {
 
         <div className="w-full h-full">
           <div className={menu_class}>
-            <div className="text-white fixed">
-              <ul className="space-y-8 p-5 -mt-28 absolute top-72 left-20">
-                <motion.li
-                  initial={animateFrom}
-                  animate={animateTo}
-                  transition={{ delay: 0.10 }}
-                  className="border-b-2 pb-1 border-gray-500 w-56 hover:text-[#ff4b1f]"
-                >
-                  {/* <a smooth href="#hash-link-aboutme"> */}
-                    About Me
-                  {/* </a> */}
-                </motion.li>
-                <motion.li
-                  initial={animateFrom}
-                  animate={animateTo}
-                  transition={{ delay: 0.15 }}
-                  className="border-b-2 pb-1 border-gray-500 w-56 hover:text-[#ff4b1f]"
-                >
-                  {/* <a smooth href="#hash-link-aboutme"> */}
-                    Technologies
-                  {/* </a> */}
-                </motion.li>
-                <motion.li
-                  initial={animateFrom}
-                  animate={animateTo}
-                  transition={{ delay: 0.20 }}
-                  className="border-b-2 pb-1 border-gray-500 w-56 hover:text-[#ff4b1f]"
-                >
-                  {/* <a smooth href="#hash-link-projects"> */}
-                    Projects
-                  {/* </a> */}
-                </motion.li>
-              </ul>
+            <div className="text-white">
+              
+                
             </div>
           </div>
-        </div>
-      </div>
+        </div> */}
+      {/* </div> */}
     </div>
   );
 }

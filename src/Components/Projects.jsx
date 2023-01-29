@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Movies from "./Img/Movies.png"
 import Tesla1 from "./Img/Tesla1.png"
 import Kabab from "./Img/Kabab restro1.png"
@@ -6,11 +6,6 @@ import '../App.css'
 import Metabnbb from "./Img/Metabnbb 1.png";
 import Repute from './Img/Repute.png'
 import { TiAttachmentOutline } from "react-icons/ti";
-import { AiOutlinePhone } from "react-icons/ai";
-import { AiOutlineGithub } from "react-icons/ai";
-import { AiOutlineMail } from "react-icons/ai";
-import { AiOutlineLinkedin } from "react-icons/ai";
-import Modal from './Modal';
 import { useEffect } from "react";
 import AOS from "aos";
 import 'aos/dist/aos.css'
@@ -25,7 +20,7 @@ function Projects() {
   }, []);
   
   const style = { color: "white", width: "40px", height: "30px" }
-   const [openModal, setOpenModal] = useState(false);
+  
   
   return (
     <section>
@@ -108,7 +103,7 @@ function Projects() {
 
             <div>
               <div
-                data-aos="fade-left"
+                data-aos="fade-right"
                 data-aos-offset="300"
                 data-aos-easing="ease-in-sine"
                 className="border-2 border-white "
@@ -215,63 +210,7 @@ function Projects() {
           <hr style={{ width: "90%", color: "white", height: "8px" }} />
         </div>
 
-        <div className="text-white hover:text-[#ff4b1f] text-2xl  flex justify-center pt-5 pb-10">
-          Contact
-        </div>
-        <div
-          className="lg:flex space-x-0 space-y-5 lg:space-y-0 lg:pl-12 lg:justify-around pt-5 pb-20 text-center  items-center"
-          id="#hash-link-contactme"
-        >
-          <button
-            onClick={() => setOpenModal(true)}
-            className="py-[7px] px-7 border-2 border-[#80d0c7]"
-          >
-            <span className="flex mt-1 gap-3">
-              <AiOutlineMail className="text-white" size={30} />
-              <p className="text-white hover:text-[#ff4b1f] text-lg">
-                Send a Mail
-              </p>
-            </span>
-          </button>
-          <Modal open={openModal} onClose={() => setOpenModal(false)} />
-          <br />
-
-          <button className="py-[7px] px-12 border-2 border-[#80d0c7]">
-            <a
-              href="https://github.com/Princessayomide53?tab=repositories"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex mt-1 gap-3"
-            >
-              <AiOutlineGithub className="text-white" size={30} />
-              <p className="text-white hover:text-[#ff4b1f] text-lg">Github</p>
-            </a>
-          </button>
-          <br />
-
-          <button className="py-[7px] px-10 border-2 border-[#80d0c7]">
-            <a
-              href="https://www.linkedin.com/in/princess-ayomide-ogunnaike-235b25211"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex mt-1 gap-3"
-            >
-              <AiOutlineLinkedin className="text-white" size={30} />
-              <p className="text-white hover:text-[#ff4b1f] text-lg">
-                LinkedIn
-              </p>
-            </a>
-          </button>
-          <br />
-
-          <button className="py-[7px] text-center px-12 border-2 border-[#80d0c7]">
-            <a href="tel: 08076824974" className="flex mt-1 gap-3">
-              <AiOutlinePhone className="text-white" size={30} />
-              <p className="text-white hover:text-[#ff4b1f] text-lg">Phone</p>
-            </a>
-          </button>
-          <br />
-        </div>
+        
       </div>
     </section>
   );

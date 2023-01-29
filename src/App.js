@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 import Header from './Components/Header';
+import Contact from './Components/Contact';
+
 import Project from './Components/Projects';
 import Technologies from './Components/Technologies';
 // import { Particles } from 'react-particles-js';
@@ -45,7 +47,7 @@ function App() {
               
          {/* <Modal />  */}
   
-  
+        <Contact />
     
         
     </div>  

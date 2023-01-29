@@ -6,11 +6,14 @@ import Jquery from './Img/Jquery.png'
 import Tailwind from "./Img/Tailwind-css.png";
 import JS from "./Img/JS Logo.png";
 import React1 from "./Img/React1.png";
+// import { useForm } from "react-hook-form";
+
 // import { HashLink } from 'react-router-hash-link'
 
 
 
 function Technologies() {
+ 
   return (
     <div
       className="bg-black text-white  Aboutus"

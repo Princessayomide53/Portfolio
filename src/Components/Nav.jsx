@@ -35,8 +35,8 @@ function Nav() {
   const animateTo = { opacity: 1, x: 0 };
   return (
     <div className="relative Nav">
-      <div className="lg:flex justify-between  hidden bg-black lg:fixed w-full">
-        <div className="flex justify-between p-3  pl-2">
+      <div className="lg:flex justify-between hidden bg-black lg:fixed w-full z-10">
+        <div className="flex justify-between p-3  pl-5">
           <h2 className="text1 text-4xl font-bold ml-6">PA.</h2>
         </div>
 
@@ -84,7 +84,7 @@ function Nav() {
           </div>
         </div>
         <div className={menu_class}>
-          <div className="text-white bg-black w-full h-screen fixed">
+          <div className="text-white bg-black w-full h-screen fixed slide-in-left">
             <ul className="space-y-8 md:space-y-14 p-5 -mt-28 absolute top-72 left-16 md:left-64">
               <motion.li
                 initial={animateFrom}

@@ -140,7 +140,7 @@ color: #000;
 
 .slide-in-left {
   animation-name: slideInFromLeft;
-  animation-duration: 5s;
+  animation-duration: 2s;
   animation-iteration-count: 1;
 }
 

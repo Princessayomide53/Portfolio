@@ -103,7 +103,7 @@ function Projects() {
 
             <div>
               <div
-                data-aos="fade-right"
+                data-aos="zoom-out"
                 data-aos-offset="300"
                 data-aos-easing="ease-in-sine"
                 className="border-2 border-white "
@@ -113,7 +113,7 @@ function Projects() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={Kabab} alt="" className="md:w-full" />
+                  <img src={Kabab} alt="" className="md:w-full h-" />
                 </a>
               </div>
               <div className="flex justify-between">
@@ -209,8 +209,6 @@ function Projects() {
         <div className="pb-10 bg-black flex justify-center">
           <hr style={{ width: "90%", color: "white", height: "8px" }} />
         </div>
-
-        
       </div>
     </section>
   );

@@ -9,15 +9,15 @@ import {  Squash as Hamburger } from 'hamburger-react';
 
 function Nav() {
 
-  // const [nav, setNav] = useState(false);
+    // const [open, setOpen] = useState(false);
 
   const [burger_class, setBurgerClass] = useState("burger-bar unclicked");
   const [menu_class, setMenuClass] = useState("menu hidden1")
   const [isMenuClicked, setIsMenuClicked] = useState(false);
 
-  // const handleNav = () => {
-  //   setNav(!nav);
-  // };
+  //  const handleClick= () => {
+  //    setOpen(false);
+  //  };
 
   const updateMenu = () => {
     if (!isMenuClicked) {
@@ -30,6 +30,12 @@ function Nav() {
     }
     setIsMenuClicked(!isMenuClicked)
   }
+
+  // const onClose = () => {
+  //   setBurgerClass("burger-bar unclicked");
+  //   setIsMenuClicked(false);
+  //   // setMenuClass("menu hidden1");
+  // }
   
   const animateFrom = {opacity: 0, x: -40}
   const animateTo = { opacity: 1, x: 0 };
@@ -43,24 +49,24 @@ function Nav() {
         <div className=" text-white text-base z-10 lg:block hidden pt-5">
           <ul className="flex space-x-16 lg:pr-10 font-bold">
             <li className="hover:text-base hover:text-[#ff4b1f]">
-              <a smooth href="#hash-link-about">
+              <a smooth="true" href="#hash-link-about">
                 About me
               </a>
             </li>
             <li className="hover:text-base hover:text-[#ff4b1f]">
-              <a smooth href="#hash-link-technologies">
+              <a smooth="true" href="#hash-link-technologies">
                 Technologies
               </a>
             </li>
 
             <li className="hover:text-base hover:text-[#ff4b1f]">
-              <a smooth href="#hash-link-projects">
+              <a smooth="true" href="#hash-link-projects">
                 Projects
               </a>
             </li>
 
             <li className="hover:text-base hover:text-[#ff4b1f]">
-              <a smooth href="#hash-link-calls">
+              <a smooth="true" href="#hash-link-calls">
                 Contacts
               </a>
             </li>
@@ -73,7 +79,7 @@ function Nav() {
           <div className=" pl-7 pt-2">
             <h2 className="text1 text-4xl font-bold ">PA.</h2>
           </div>
-          <div className='mr-7'>
+          <div className="mr-7">
             <Hamburger
               direction="squash"
               size={30}
@@ -91,8 +97,11 @@ function Nav() {
                 animate={animateTo}
                 transition={{ delay: 0.2 }}
                 className="border-b-2 pb-1 md:pb-2 border-gray-500 w-56 hover:text-[#ff4b1f]"
+                // onClick={() => {
+                //   setMenuClass("hidden1");
+                // }}
               >
-                <a smooth href="#hash-link-aboutme">
+                <a smooth="true" href="#hash-link-resume">
                   Resumes
                 </a>
               </motion.li>
@@ -101,6 +110,7 @@ function Nav() {
                 animate={animateTo}
                 transition={{ delay: 0.3 }}
                 className="border-b-2 pb-1 md:pb-2 border-gray-500 w-56 hover:text-[#ff4b1f]"
+                // onClick={onClose}
               >
                 <a smooth href="#hash-link-technologies">
                   Technologies
@@ -111,8 +121,9 @@ function Nav() {
                 animate={animateTo}
                 transition={{ delay: 0.4 }}
                 className="border-b-2 pb-1 md:pb-2 border-gray-500 w-56 hover:text-[#ff4b1f]"
+                // onClick={onClose}
               >
-                <a smooth href="#hash-link-projects">
+                <a smooth="true" h href="#hash-link-projects">
                   Projects
                 </a>
               </motion.li>
@@ -122,8 +133,9 @@ function Nav() {
                 animate={animateTo}
                 transition={{ delay: 0.45 }}
                 className="border-b-2 pb-1 border-gray-500 w-56 hover:text-[#ff4b1f]"
+                // onClick={onClose}
               >
-                <a smooth href="#hash-link-calls">
+                <a smooth="true" href="#hash-link-calls">
                   Contact
                 </a>
               </motion.li>

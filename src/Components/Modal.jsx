@@ -114,14 +114,14 @@ function Modal({ open, onClose }) {
               className="flex flex-col mt-0 justify-center z-10 items-center ml-0 fixed bg-[#2e2b2b] bg-opacity-60 inset-0 w-full h-screen"
             >
               <div className="bg-black lg:w-[70%] md:w-[80%] w-full h-screen  rounded-md">
-                <div className="flex justify-end lg:mt-5 mt-1 pr-5 text-3xl z-10">
+                <div className="flex justify-end lg:mt-2 mt-1 pr-5 text-3xl z-10">
                   <button className="text-white" onClick={onClose}>
                     X
                   </button>
                 </div>
                 <div className="flex justify-center Form -mt-3 lg:-mt-0 md:-mt-0">
                   <div className="bg-black rounded-md w-[70%] flex flex-col justify-center items-center">
-                    <div className="lg:w-[70%] w-[100%] mt-10">
+                    <div className="lg:w-[70%] w-[100%] mt-5 mb-2">
                       <input
                         type="text"
                         id="name"
@@ -139,7 +139,7 @@ function Modal({ open, onClose }) {
                         ""
                       )}
                     </div>
-                    <div className="lg:w-[70%] w-[100%] mt-10">
+                    <div className="lg:w-[70%] w-[100%] mt-5 mb-2">
                       <input
                         type="text"
                         id="email"
@@ -156,7 +156,7 @@ function Modal({ open, onClose }) {
                         ""
                       )}
                     </div>
-                    <div className="lg:w-[70%] w-[100%] mt-10">
+                    <div className="lg:w-[70%] w-[100%] mt-5 mb-2">
                       <input
                         type="text"
                         id="phonenumber"
@@ -173,7 +173,7 @@ function Modal({ open, onClose }) {
                         ""
                       )}
                     </div>
-                    <div className="lg:w-[70%] w-[100%] mt-10">
+                    <div className="lg:w-[70%] w-[100%] mt-5 mb-2">
                       <textarea
                         id="message"
                         name="message"
@@ -190,11 +190,11 @@ function Modal({ open, onClose }) {
                       )}
                     </div>
 
-                    <div className="lg:mt-10 mt-5">
+                    <div className="lg:mt-10 mt-5 w-[100%] text-center">
                       <button
                         type="submit"
                         onClick={notify}
-                        className="text-xl bg-[#ff4b1f]  rounded-tr-md text-white px-8 py-3 hover:bg-[#80d0c7]"
+                        className="text-xl bg-[#ff4b1f]  rounded-tr-md text-white w-[69%] py-4 hover:bg-[#80d0c7]"
                       >
                         {loading ? <div className="loader"></div> : "Submit"}
                       </button>
@@ -209,7 +209,7 @@ function Modal({ open, onClose }) {
         ) : (
           <ToastContainer />
         )}
-        // <ToastContainer />
+        <ToastContainer />
       </>
     );
   };

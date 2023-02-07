@@ -4,9 +4,9 @@ import '../App.css';
 import emailjs from "@emailjs/browser";
 import { useState } from "react";
 import ErrorMessage from "./ErrorMessage";
-// import EmailSent from "./EmailSent";
- import { ToastContainer, toast } from "react-toastify";
- import "react-toastify/dist/ReactToastify.css";
+import EmailSent from "./EmailSent";
+//  import { ToastContainer, toast } from "react-toastify";
+//  import "react-toastify/dist/ReactToastify.css";
 
 
 const EMAIL_REGEX =
@@ -14,10 +14,10 @@ const EMAIL_REGEX =
 
 
 function Modal({ open, onClose }) {
-  const notify = () => toast.success("Message sent", {
-    position: "top-center",
-    theme: "dark",
-  });
+  // const notify = () => toast.success("Message sent", {
+  //   position: "top-center",
+  //   theme: "dark",
+  // });
 
 // const initialValues = { full_name: "", email: "", phonenumber: "", message: "" };
 
@@ -31,6 +31,7 @@ function Modal({ open, onClose }) {
   const [valid, setValid] = useState(null);
   const [sent, setSent] = useState(false);
   const [sentError, setSentError] = useState(false);
+   const [openModal, setOpenModal] = useState(false);
 
   useEffect(() => {
     const body = document.querySelector("body");
@@ -53,6 +54,7 @@ function Modal({ open, onClose }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     setTriedToSubmit(true);
+    setOpenModal(true);
     if (name && email && phonenumber && message !== "") {
       if (valid === true) {
         setLoading(true);
@@ -68,14 +70,17 @@ function Modal({ open, onClose }) {
             )
             .then(
               (result) => {
-                setTriedToSubmit(false);
+                // setTriedToSubmit(false);
                 setLoading(false);
                 setSent(true);
                 setEmail("");
                 setName("");
                 setPhonenumber("");
                 setMessage("");
-                onClose();
+                // setOpenModal(true);
+                // notify();
+                // e.target.reset("");
+                // onClose();
                 console.log(result.text);
               },
               (error) => {
@@ -92,6 +97,7 @@ function Modal({ open, onClose }) {
         setLoading(false);
       }
     }
+    // e.target.reset();
     // notify();
     // if(sent){
     //   toast.success("Message sent", {
@@ -101,14 +107,21 @@ function Modal({ open, onClose }) {
     // }
   };
 
-
+  // const showUp = () => {
+  //    if (!sent){
+  //     return <EmailSent />
+  //    }
+  //    else {
+  //      return "Message failed"
+  //   }
+  //  }
    
 
   if (!open) return null;
     return (
       <>
-        {!sent ? (
-          <form ref={form} onSubmit={handleSubmit}>
+        <form ref={form} onSubmit={handleSubmit}>
+          {!sent ? (
             <div
               class="modal"
               className="flex flex-col mt-0 justify-center z-10 items-center ml-0 fixed bg-[#2e2b2b] bg-opacity-60 inset-0 w-full h-screen"
@@ -193,24 +206,31 @@ function Modal({ open, onClose }) {
                     <div className="lg:mt-10 mt-5 w-[100%] text-center">
                       <button
                         type="submit"
-                        onClick={notify}
-                        className="text-xl bg-[#ff4b1f]  rounded-tr-md text-white w-[69%] py-4 hover:bg-[#80d0c7]"
+                        onClick={() =>setOpenModal(false)}
+                        // onClick={handleSubmit}
+                        // onClick={notify}
+                        // onClick={() => setOpenModal(true)}
+                        className="text-xl bg-[#ff4b1f]  h-20 rounded-tr-md text-white w-[69%] py-4 hover:bg-[#80d0c7]"
                       >
-                        {loading ? <div className="loader"></div> : "Submit"}
+                        Submit
+                        {/* {loading ? <div className="loader"></div> : "Submit"} */}
                       </button>
+                      <EmailSent
+                        open={openModal}
+                        onClose={() => setOpenModal(false)}
+                      />
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-
-            {/* { sentError &&  <ErrorMessage error="An error occurred, please try again. " /> } */}
-          </form>
-        ) : (
-          <ToastContainer />
-        )}
-        <ToastContainer />
+          ) : (
+            
+            <EmailSent />
+          )}
+        </form>
       </>
+      /* <ToastContainer /> */
     );
   };
 

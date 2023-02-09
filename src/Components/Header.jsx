@@ -68,7 +68,7 @@ function Header() {
             </p>
           </div>
 
-          <div className="lg:hidden md:block block md:pl-16 md:pr-20 pl-5 pr-5">
+          <div className="lg:hidden md:block block md:pl-16 md:pr-20 pl-5 pr-5" id="hash-link-about">
             <p className="text-justify lg:text-base text-sm md:text-base lg:mt-2 mt-1 leading-8  md:leading-9 flex-wrap md:space-y-14 pr-5">
               I'm Princess, a Frontend Developer based in Lagos, Nigeria. I have
               substantial knowledge of HTML, CSS, JavaScript and React. I am
@@ -80,7 +80,7 @@ function Header() {
             </p>
           </div>
 
-          <div className="lg:flex space-y-5 lg:space-y-0 lg:space-x-20 md:pl-16 pl-5 lg:pl-0  ">
+          <div className="lg:flex space-y-5 lg:space-y-0 lg:space-x-20 md:pl-16 pl-5 lg:pl-0  " id="hash-link-template">
             <button
               className="px-10 text-base flex gap-3 py-3 border-2 border-[#80d0c7] hover:bg-[#80d0c7]  text-white "
               // id="hash-link-contactme"
@@ -91,7 +91,7 @@ function Header() {
 
             <button
               className="px-10 text-base flex gap-3 lg:py-2 py-3 border-2 border-[#80d0c7] hover:bg-[#80d0c7]  text-white "
-              id='#hash-link-resume'
+              
             >
               <a href={Resume} download="Resume" className="flex gap-3">
                 Download Resume{" "}

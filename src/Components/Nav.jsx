@@ -9,27 +9,27 @@ import {  Squash as Hamburger } from 'hamburger-react';
 
 function Nav() {
 
-    // const [open, setOpen] = useState(false);
+    const [open, setOpen] = useState(false);
 
-  const [burger_class, setBurgerClass] = useState("burger-bar unclicked");
-  const [menu_class, setMenuClass] = useState("menu hidden1")
-  const [isMenuClicked, setIsMenuClicked] = useState(false);
+  // const [burger_class, setBurgerClass] = useState("burger-bar unclicked");
+  // const [menu_class, setMenuClass] = useState("menu hidden1")
+  // const [isMenuClicked, setIsMenuClicked] = useState(false);
 
-  //  const handleClick= () => {
-  //    setOpen(false);
-  //  };
+   const handleClick= () => {
+     setOpen(false);
+   };
 
-  const updateMenu = () => {
-    if (!isMenuClicked) {
-      setBurgerClass("burger-bar clicked")
-      setMenuClass("menu visible")
-    }
-    else {
-      setBurgerClass("burger-bar unclicked")
-      setMenuClass("menu hidden1")
-    }
-    setIsMenuClicked(!isMenuClicked)
-  }
+  // const updateMenu = () => {
+  //   if (!isMenuClicked) {
+  //     setBurgerClass("burger-bar clicked")
+  //     setMenuClass("menu visible")
+  //   }
+  //   else {
+  //     setBurgerClass("burger-bar unclicked")
+  //     setMenuClass("menu hidden1")
+  //   }
+  //   setIsMenuClicked(!isMenuClicked)
+  // }
 
   // const onClose = () => {
   //   setBurgerClass("burger-bar unclicked");
@@ -74,7 +74,7 @@ function Nav() {
         </div>
       </div>
 
-      <div className="lg:hidden block">
+      <div className="lg:hidden block fixed z-10">
         <div className="flex justify-between bg-black pt-2 pb-2 fixed w-full z-10">
           <div className=" pl-7 pt-2">
             <h2 className="text1 text-4xl font-bold ">PA.</h2>
@@ -85,63 +85,64 @@ function Nav() {
               size={30}
               color="white"
               className="burger-menu"
-              onToggle={updateMenu}
+              toggled={open}
+              toggle={() => setOpen(!open)}
             />
           </div>
         </div>
-        <div className={menu_class}>
-          <div className="text-white bg-black w-full h-screen fixed slide-in-left">
-            <ul className="space-y-8 md:space-y-14 p-5 -mt-28 absolute top-72 left-16 md:left-64">
-              <motion.li
-                initial={animateFrom}
-                animate={animateTo}
-                transition={{ delay: 0.2 }}
-                className="border-b-2 pb-1 md:pb-2 border-gray-500 w-56 hover:text-[#ff4b1f]"
-                // onClick={() => {
-                //   setMenuClass("hidden1");
-                // }}
-              >
-                <a smooth="true" href="#hash-link-resume">
-                  Resumes
-                </a>
-              </motion.li>
-              <motion.li
-                initial={animateFrom}
-                animate={animateTo}
-                transition={{ delay: 0.3 }}
-                className="border-b-2 pb-1 md:pb-2 border-gray-500 w-56 hover:text-[#ff4b1f]"
-                // onClick={onClose}
-              >
-                <a smooth href="#hash-link-technologies">
-                  Technologies
-                </a>
-              </motion.li>
-              <motion.li
-                initial={animateFrom}
-                animate={animateTo}
-                transition={{ delay: 0.4 }}
-                className="border-b-2 pb-1 md:pb-2 border-gray-500 w-56 hover:text-[#ff4b1f]"
-                // onClick={onClose}
-              >
-                <a smooth="true" h href="#hash-link-projects">
-                  Projects
-                </a>
-              </motion.li>
+        {open && (
+          <div>
+            <div className="text-white bg-black w-full h-screen fixed slide-in-left">
+              <ul className="space-y-8 md:space-y-14 p-5 -mt-28 absolute top-72 left-16 md:left-64 z-10">
+                <motion.li
+                  initial={animateFrom}
+                  animate={animateTo}
+                  transition={{ delay: 0.2 }}
+                  className="border-b-2 pb-1 md:pb-2 border-gray-500 w-56 hover:text-[#ff4b1f]"
+                  onClick={handleClick}
+                >
+                  <a smooth="true" href="#hash-link-template">
+                    Resumes
+                  </a>
+                </motion.li>
+                <motion.li
+                  initial={animateFrom}
+                  animate={animateTo}
+                  transition={{ delay: 0.3 }}
+                  className="border-b-2 pb-1 md:pb-2 border-gray-500 w-56 hover:text-[#ff4b1f]"
+                  onClick={handleClick}
+                >
+                  <a smooth href="#hash-link-technologies">
+                    Technologies
+                  </a>
+                </motion.li>
+                <motion.li
+                  initial={animateFrom}
+                  animate={animateTo}
+                  transition={{ delay: 0.4 }}
+                  className="border-b-2 pb-1 md:pb-2 border-gray-500 w-56 hover:text-[#ff4b1f]"
+                  onClick={handleClick}
+                >
+                  <a smooth="true" h href="#hash-link-projects">
+                    Projects
+                  </a>
+                </motion.li>
 
-              <motion.li
-                initial={animateFrom}
-                animate={animateTo}
-                transition={{ delay: 0.45 }}
-                className="border-b-2 pb-1 border-gray-500 w-56 hover:text-[#ff4b1f]"
-                // onClick={onClose}
-              >
-                <a smooth="true" href="#hash-link-calls">
-                  Contact
-                </a>
-              </motion.li>
-            </ul>
+                <motion.li
+                  initial={animateFrom}
+                  animate={animateTo}
+                  transition={{ delay: 0.45 }}
+                  className="border-b-2 pb-1 border-gray-500 w-56 hover:text-[#ff4b1f]"
+                  onClick={handleClick}
+                >
+                  <a smooth="true" href="#hash-link-calls">
+                    Contact
+                  </a>
+                </motion.li>
+              </ul>
+            </div>
           </div>
-        </div>
+        )}
       </div>
 
       {/* <div className="wrap lg:hidden md:block  block">

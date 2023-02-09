@@ -68,8 +68,8 @@ function Projects() {
 
             <div>
               <div
-                data-aos="fade-right"
-                data-aos-offset="300"
+                data-aos="fade-down"
+                // data-aos-offset="300"
                 data-aos-easing="ease-in-sine"
                 className="border-2 border-white "
               >

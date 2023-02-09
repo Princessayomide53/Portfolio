@@ -31,7 +31,7 @@ function Modal({ open, onClose }) {
   const [valid, setValid] = useState(null);
   const [sent, setSent] = useState(false);
   const [sentError, setSentError] = useState(false);
-   const [openModal, setOpenModal] = useState(false);
+   const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
     const body = document.querySelector("body");
@@ -54,7 +54,7 @@ function Modal({ open, onClose }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     setTriedToSubmit(true);
-    setOpenModal(true);
+    // setOpenModal(true);
     if (name && email && phonenumber && message !== "") {
       if (valid === true) {
         setLoading(true);
@@ -80,17 +80,22 @@ function Modal({ open, onClose }) {
                 // setOpenModal(true);
                 // notify();
                 // e.target.reset("");
-                // onClose();
+                onClose();
                 console.log(result.text);
+                setShowModal(true);
               },
               (error) => {
                 setLoading(false);
                 console.log(error.text);
+                setShowModal(false);
+
               }
             );
         } catch (error) {
           setSentError(true);
           setLoading(false);
+          setShowModal(false);
+
         }
         // End emailJs
       } else {
@@ -107,14 +112,13 @@ function Modal({ open, onClose }) {
     // }
   };
 
-  // const showUp = () => {
-  //    if (!sent){
-  //     return <EmailSent />
-  //    }
-  //    else {
-  //      return "Message failed"
-  //   }
-  //  }
+  const handleClick = () => {
+if (!sent === true) {
+   setShowModal(true);
+}else {
+   setShowModal(false);
+}
+  }
    
 
   if (!open) return null;
@@ -127,7 +131,7 @@ function Modal({ open, onClose }) {
               className="flex flex-col mt-0 justify-center z-10 items-center ml-0 fixed bg-[#2e2b2b] bg-opacity-60 inset-0 w-full h-screen"
             >
               <div className="bg-black lg:w-[70%] md:w-[80%] w-full h-screen  rounded-md">
-                <div className="flex justify-end lg:mt-2 mt-1 pr-5 text-3xl z-10">
+                <div className="flex justify-end lg:mt-2 mt-1 pr-5 text-3xl z-10 mb-2">
                   <button className="text-white" onClick={onClose}>
                     X
                   </button>
@@ -206,18 +210,18 @@ function Modal({ open, onClose }) {
                     <div className="lg:mt-10 mt-5 w-[100%] text-center">
                       <button
                         type="submit"
-                        onClick={() =>setOpenModal(false)}
-                        // onClick={handleSubmit}
+                        // onClick={() =>setOpenModal(false)}
+                        onClick={handleClick}
                         // onClick={notify}
                         // onClick={() => setOpenModal(true)}
-                        className="text-xl bg-[#ff4b1f]  h-20 rounded-tr-md text-white w-[69%] py-4 hover:bg-[#80d0c7]"
+                        className="text-xl bg-[#ff4b1f] h-16 lg:h-20 rounded-tr-md text-white w-[69%] lg:py-4 hover:bg-[#80d0c7] py-3"
                       >
                         Submit
                         {/* {loading ? <div className="loader"></div> : "Submit"} */}
                       </button>
                       <EmailSent
-                        open={openModal}
-                        onClose={() => setOpenModal(false)}
+                        open={showModal}
+                        onClose={() => setShowModal(false)}
                       />
                     </div>
                   </div>
@@ -230,7 +234,7 @@ function Modal({ open, onClose }) {
           )}
         </form>
       </>
-      /* <ToastContainer /> */
+      
     );
   };
 

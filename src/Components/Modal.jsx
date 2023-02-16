@@ -4,9 +4,9 @@ import '../App.css';
 import emailjs from "@emailjs/browser";
 import { useState } from "react";
 import ErrorMessage from "./ErrorMessage";
-import EmailSent from "./EmailSent";
-//  import { ToastContainer, toast } from "react-toastify";
-//  import "react-toastify/dist/ReactToastify.css";
+// import EmailSent from "./EmailSent";
+ import { ToastContainer, toast } from "react-toastify";
+ import "react-toastify/dist/ReactToastify.css";
 
 
 const EMAIL_REGEX =
@@ -14,10 +14,10 @@ const EMAIL_REGEX =
 
 
 function Modal({ open, onClose }) {
-  // const notify = () => toast.success("Message sent", {
-  //   position: "top-center",
-  //   theme: "dark",
-  // });
+  const notify = () => toast.success("Message sent", {
+    position: "top-center",
+    theme: "dark",
+  });
 
 // const initialValues = { full_name: "", email: "", phonenumber: "", message: "" };
 
@@ -31,11 +31,11 @@ function Modal({ open, onClose }) {
   const [valid, setValid] = useState(null);
   const [sent, setSent] = useState(false);
   const [sentError, setSentError] = useState(false);
-   const [showModal, setShowModal] = useState(false);
+  
 
   useEffect(() => {
-    const body = document.querySelector("body");
-    body.style.overflow = open ? "hidden" : "auto";
+    // const body = document.querySelector("body");
+    // body.style.overflow = open ? "hidden" : "auto";
 
     EMAIL_REGEX.test(email) ? setValid(true) : setValid(false);
   }, [open, email]);
@@ -77,24 +77,23 @@ function Modal({ open, onClose }) {
                 setName("");
                 setPhonenumber("");
                 setMessage("");
-                // setOpenModal(true);
-                // notify();
-                // e.target.reset("");
+                notify();
+                // e.target.reset();
                 onClose();
                 console.log(result.text);
-                setShowModal(true);
+                
               },
               (error) => {
                 setLoading(false);
                 console.log(error.text);
-                setShowModal(false);
+                // setShowModal(false);
 
               }
             );
         } catch (error) {
           setSentError(true);
           setLoading(false);
-          setShowModal(false);
+          // setShowModal(false);
 
         }
         // End emailJs
@@ -112,20 +111,20 @@ function Modal({ open, onClose }) {
     // }
   };
 
-  const handleClick = () => {
-if (!sent === true) {
-   setShowModal(true);
-}else {
-   setShowModal(false);
-}
-  }
+//   const handleClick = () => {
+// if (!sent === true) {
+//    setShowModal(true);
+// }else {
+//    setShowModal(false);
+// }
+//   }
    
 
   if (!open) return null;
     return (
       <>
-        <form ref={form} onSubmit={handleSubmit}>
-          {!sent ? (
+        {!sent ? (
+          <form ref={form} onSubmit={handleSubmit}>
             <div
               class="modal"
               className="flex flex-col mt-0 justify-center z-10 items-center ml-0 fixed bg-[#2e2b2b] bg-opacity-60 inset-0 w-full h-screen"
@@ -210,31 +209,27 @@ if (!sent === true) {
                     <div className="lg:mt-10 mt-5 w-[100%] text-center">
                       <button
                         type="submit"
-                        // onClick={() =>setOpenModal(false)}
-                        onClick={handleClick}
+                        // onClick={handleClick}
                         // onClick={notify}
-                        // onClick={() => setOpenModal(true)}
+
                         className="text-xl bg-[#ff4b1f] h-16 lg:h-20 rounded-tr-md text-white w-[69%] lg:py-4 hover:bg-[#80d0c7] py-3"
                       >
                         Submit
                         {/* {loading ? <div className="loader"></div> : "Submit"} */}
                       </button>
-                      <EmailSent
+                      {/* <EmailSent
                         open={showModal}
-                        onClose={() => setShowModal(false)}
-                      />
+                        onClose={() => setShowModal(false)} */}
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          ) : (
-            
-            <EmailSent />
-          )}
-        </form>
+          </form>
+        ) : (
+          <ToastContainer />
+        )}
       </>
-      
     );
   };
 

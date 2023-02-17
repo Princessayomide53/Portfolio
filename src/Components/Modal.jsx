@@ -44,12 +44,6 @@ function Modal({ open, onClose }) {
     setEmail(e.target.value);
   };
 
-  //   const handlePhonenumber = (e) => {
-  //     setPhonenumber(e.target.value);
-  //   };
-  //     const handleMessage = (e) => {
-  //   setMessage(e.target.value);
-  // };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -147,7 +141,7 @@ function Modal({ open, onClose }) {
                         checked
                         // required
                         placeholder="Enter Your Name*"
-                        className=" border-[#80d0c7] pl-3 focus:outline-[#80d0c7] border-2 w-full h-16 rounded-md bg-black"
+                        className=" border-[#80d0c7] text-white pl-3 focus:outline-[#80d0c7] border-2 w-full h-16 rounded-md bg-black"
                       />
                       {!name && triedToSubmit ? (
                         <ErrorMessage error="Name field required" />
@@ -164,7 +158,7 @@ function Modal({ open, onClose }) {
                         onChange={handleEmail}
                         // required
                         placeholder="Enter Your Email*"
-                        className=" border-[#80d0c7] pl-3 focus:outline-[#80d0c7] border-2 w-full h-16 rounded-md bg-black"
+                        className=" border-[#80d0c7] text-white pl-3 focus:outline-[#80d0c7] border-2 w-full h-16 rounded-md bg-black"
                       />
                       {!email && triedToSubmit ? (
                         <ErrorMessage error="email field required" />

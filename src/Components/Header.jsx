@@ -102,33 +102,7 @@ function Header() {
 
           <Modal open={openModal} onClose={() => setOpenModal(false)} />
 
-          {/* <p className="text-gray-600 text-lg leading-7 pt-5 font-semibold">
-            
-          </p> */}
-          {/* <div className="grid grid-cols-3 w-32 gap-5 pt-5 ">
-            <a href="https://github.com/Princessayomide53?tab=repositories">
-              <img
-                src={Vector}
-                alt=""
-                className="hover:animate-bounce fill-white"
-              />
-            </a>
-            <a href="https://mail.com/Payomide53@gmail.com">
-              <img
-                src={Vector1}
-                alt=""
-                className="hover:animate-bounce bg-white"
-              />
-            </a>
 
-            <a href="https://www.linkedin.com/in/princess-ayomide-ogunnaike-235b25211">
-              <img
-                src={Vector2}
-                alt=""
-                className="hover:animate-bounce bg-white"
-              />
-            </a>
-          </div> */}
         </div>
         <div className="md:hidden hidden lg:block">
           <img src={Woman} alt="" className="pt-40 w-[90%]" />

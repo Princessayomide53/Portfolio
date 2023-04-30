@@ -49,7 +49,6 @@ function Modal({ open, onClose }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     setTriedToSubmit(true);
-    // notify();
     if (name && email && phonenumber && message !== "") {
       if (valid === true) {
         setLoading(true); 
@@ -72,7 +71,8 @@ function Modal({ open, onClose }) {
                 setName("");
                 setPhonenumber("");
                 setMessage("");
-                e.target.reset();
+                e.target.reset();   
+                setTriedToSubmit(false)
                 onClose();
                   toast.success('Message sent sucessfully!', {
                     position: toast.POSITION.TOP_CENTER,

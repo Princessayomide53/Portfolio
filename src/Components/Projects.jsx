@@ -2,6 +2,7 @@ import React from 'react'
 import Movies from "./Img/Movies.png"
 import Tesla1 from "./Img/Tesla1.png"
 import Kabab from "./Img/Kabab restro1.png"
+import Hackthon from "./Img/Hackthon.png";
 import '../App.css'
 import Metabnbb from "./Img/Metabnbb 1.png";
 import Repute from './Img/Repute.png'
@@ -37,7 +38,7 @@ function Projects() {
             <div>
               <div
                 data-aos="zoom-in"
-                data-aos-offset="300"
+                data-aos-offset="100"
                 data-aos-easing="ease-in-sine"
                 className="border-2 border-white "
               >
@@ -104,7 +105,7 @@ function Projects() {
             <div>
               <div
                 data-aos="zoom-out"
-                data-aos-offset="300"
+                data-aos-offset="100"
                 data-aos-easing="ease-in-sine"
                 className="border-2 border-white "
               >
@@ -139,7 +140,7 @@ function Projects() {
             <div>
               <div
                 data-aos="flip-right"
-                data-aos-offset="300"
+                data-aos-offset="100"
                 data-aos-easing="ease-in-sine"
                 className="border-2 border-white "
               >
@@ -173,12 +174,12 @@ function Projects() {
             <div>
               <div
                 data-aos="zoom-in-down"
-                data-aos-offset="300"
+                data-aos-offset="100"
                 // data-aos-easing="ease-in-sine"
                 className="border-2 border-white "
               >
                 <a
-                  href="metabnb1.netlify.app"
+                  href="https://www.repute.legal/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -201,6 +202,39 @@ function Projects() {
                 Intership in Hngi9 <br />
                 <span className="text-[#0093e9] mt-[6px]">
                   React - Styled Component - TailwindCSS
+                </span>
+              </p>
+            </div>
+
+            <div>
+              <div
+                data-aos="zoom-in-down"
+                data-aos-offset="100"
+                // data-aos-easing="ease-in-sine"
+                className="border-2 border-white "
+              >
+                <a
+                  href="https://medical-system.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={Hackthon} alt="" className="md:w-full" />
+                </a>
+              </div>
+              <div className="flex justify-between">
+                <h1 className="text-white text-xl">Cornea Clinic</h1>
+                <a
+                  href="https://medical-system.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <TiAttachmentOutline style={style} />
+                </a>
+              </div>
+              <p className="text-white mt-[10px]">
+                This is a Medical Clinic that contains all types of doctors and hospitals and easily detect nearest Clinics around you, where you can book various appointments with differents doctors  <br />
+                <span className="text-[#0093e9] mt-[6px]">
+                  Nextjs - TailwindCSS
                 </span>
               </p>
             </div>

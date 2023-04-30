@@ -3,7 +3,6 @@ import { useEffect } from 'react';
 import '../App.css';
 import Nav from './Nav';
 // import Bg from './Img/Bg.png'
-
 import Woman from './Img/Woman.png'
 import AOS from "aos";
 import "aos/dist/aos.css";

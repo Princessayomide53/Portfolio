@@ -6,9 +6,7 @@ import jquery from './Img/jquery-ar21_.png'
 import tailwind from "./Img/tailwind-css-2.png";
 import JS from "./Img/JS Logo.png";
 import React1 from "./Img/React1.png";
-// import { useForm } from "react-hook-form";
 
-// import { HashLink } from 'react-router-hash-link'
 
 
 

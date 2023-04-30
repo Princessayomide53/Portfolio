@@ -1,7 +1,5 @@
 import React, { useState } from 'react'
 import '../App.css'
-// import {  AiOutlineMenu } from "react-icons/ai";
-// import { AiOutlineClose  } from "react-icons/ai";
 import { motion } from "framer-motion"
 // import { HashLink } from "react-router-hash-link";
 import {  Squash as Hamburger } from 'hamburger-react';
@@ -11,31 +9,9 @@ function Nav() {
 
     const [open, setOpen] = useState(false);
 
-  // const [burger_class, setBurgerClass] = useState("burger-bar unclicked");
-  // const [menu_class, setMenuClass] = useState("menu hidden1")
-  // const [isMenuClicked, setIsMenuClicked] = useState(false);
-
    const handleClick= () => {
      setOpen(false);
    };
-
-  // const updateMenu = () => {
-  //   if (!isMenuClicked) {
-  //     setBurgerClass("burger-bar clicked")
-  //     setMenuClass("menu visible")
-  //   }
-  //   else {
-  //     setBurgerClass("burger-bar unclicked")
-  //     setMenuClass("menu hidden1")
-  //   }
-  //   setIsMenuClicked(!isMenuClicked)
-  // }
-
-  // const onClose = () => {
-  //   setBurgerClass("burger-bar unclicked");
-  //   setIsMenuClicked(false);
-  //   // setMenuClass("menu hidden1");
-  // }
   
   const animateFrom = {opacity: 0, x: -40}
   const animateTo = { opacity: 1, x: 0 };
@@ -75,7 +51,7 @@ function Nav() {
       </div>
 
       <div className="lg:hidden block fixed z-10">
-        <div className="flex justify-between bg-black pt-2 pb-2 fixed w-full z-10">
+        <div className="flex justify-between bg-black pt-2 pb-2 fixed w-full z-10 rounded-full border-2 border-slate-600 mt-2">
           <div className=" pl-7 pt-2">
             <h2 className="text1 text-4xl font-bold ">PA.</h2>
           </div>

@@ -37,9 +37,9 @@ function Projects() {
           <div className="lg:grid lg:grid-cols-2 gap-14 p-10 sm:grid-cols-1 md:grid-cols-2 space-y-14 -mt-12 lg:space-y-0 md:ml-12 md:mr-12">
             <div>
               <div
-                data-aos="zoom-in"
-                data-aos-offset="100"
-                data-aos-easing="ease-in-sine"
+                data-aos="fade-down-left"
+                // data-aos-offset="100"
+                // data-aos-easing="ease-in-sine"
                 className="border-2 border-white "
               >
                 <a
@@ -71,7 +71,7 @@ function Projects() {
               <div
                 data-aos="zoom-in"
                 // data-aos-offset="300"
-                data-aos-easing="ease-in-sine"
+                // data-aos-easing="ease-in-sine"
                 className="border-2 border-white "
               >
                 <a
@@ -105,8 +105,8 @@ function Projects() {
             <div>
               <div
                 data-aos="zoom-out"
-                data-aos-offset="100"
-                data-aos-easing="ease-in-sine"
+                // data-aos-offset="100"
+                // data-aos-easing="ease-in-sine"
                 className="border-2 border-white "
               >
                 <a
@@ -140,9 +140,9 @@ function Projects() {
             <div>
               <div
                 data-aos="flip-right"
-                data-aos-offset="100"
-                data-aos-easing="ease-in-sine"
-                className="border-2 border-white "
+                // data-aos-offset="100"
+                // data-aos-easing="ease-in-sine"
+                className="border-2 border-white"
               >
                 <a
                   href="metabnb1.netlify.app"
@@ -174,7 +174,7 @@ function Projects() {
             <div>
               <div
                 data-aos="zoom-in-down"
-                data-aos-offset="100"
+                // data-aos-offset="100"
                 // data-aos-easing="ease-in-sine"
                 className="border-2 border-white "
               >
@@ -208,8 +208,8 @@ function Projects() {
 
             <div>
               <div
-                data-aos="zoom-in-down"
-                data-aos-offset="100"
+                data-aos="fade-down-right"
+                // data-aos-offset="100"
                 // data-aos-easing="ease-in-sine"
                 className="border-2 border-white "
               >

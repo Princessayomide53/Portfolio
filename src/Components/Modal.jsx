@@ -31,10 +31,8 @@ function Modal({ open, onClose }) {
   const [triedToSubmit, setTriedToSubmit] = useState(false);
   const [valid, setValid] = useState(null);
   const [sent, setSent] = useState(false);
-  // const [showToast, setShowToast] = useState(false);
-  // const [toastMessage, setToastMessage] = useState('');
   // const [sentError, setSentError] = useState(false);
-  // const formRef = useRef(null)
+ 
 
   useEffect(() => {
     // const body = document.querySelector("body");

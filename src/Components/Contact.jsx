@@ -30,7 +30,7 @@ import Modal from "./Modal";
               size={30}
             />
             <p className="text-white hover:text-[#ff4b1f] text-lg">
-              Send a Mail
+              Collaborate
             </p>
           </span>
         </button>

@@ -112,7 +112,7 @@ function Nav() {
                   onClick={handleClick}
                 >
                   <a smooth="true" href="#hash-link-calls">
-                    Contact
+                    Collaborate
                   </a>
                 </motion.li>
               </ul>

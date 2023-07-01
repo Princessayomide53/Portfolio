@@ -23,7 +23,14 @@ function Nav() {
         </div>
 
         <div className=" text-white text-base z-10 lg:block hidden pt-5">
+      
           <ul className="flex space-x-16 lg:pr-10 font-bold">
+          <div className='-m-1'>
+      <label class="switch">
+    <input type="checkbox" />
+    <span class="slider"></span>
+</label>
+</div>
             <li className="hover:text-base hover:text-[#ff4b1f]">
               <a smooth="true" href="#hash-link-about">
                 About me

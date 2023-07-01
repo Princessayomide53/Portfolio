@@ -2,7 +2,7 @@ import React from 'react'
 import '../App.css'
 import Css from './Img/Css.png'
 import HTML5 from './Img/HTML5.png'
-import jquery from './Img/jquery-ar21_.png'
+import nextjs from './Img/nextjs.png'
 import tailwind from "./Img/tailwind-css-2.png";
 import JS from "./Img/JS Logo.png";
 import React1 from "./Img/React1.png";
@@ -31,10 +31,10 @@ function Technologies() {
       <div className="lg:flex pl-10 md:pl-20 lg:pl-10 lg:pr-10 lg:justify-around grid grid-cols-3 md:gap-36 gap-8 p-5 lg:p-0 mt-10">
         <img src={HTML5} alt="" className="w-18 h-12" />
         <img src={Css} alt="" className="w-18 h-12" />
-        <img src={tailwind} alt="" className="w-20 h-12" />
-        <img src={JS} alt="" className="w-18 h-14" />
-        <img src={jquery} alt="" className="w-20 h-12" />
+        <img src={tailwind} alt="" className="w-[75px] h-10" />
+        <img src={JS} alt="" className="w-18 h-14" /> 
         <img src={React1} alt="React" className="w-18 h-12" />
+        <img src={nextjs} alt="" className="w-[50px] h-12 bg-white rounded-md" />
       </div>
     </div>
   );

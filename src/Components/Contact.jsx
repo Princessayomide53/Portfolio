@@ -13,7 +13,7 @@ import Modal from "./Modal";
      const [openModal, setOpenModal] = useState(false);
   return (
     <div className="bg-black">
-      <div className="text-white hover:text-[#ff4b1f] text-2xl  flex justify-center pt-5 pb-10">
+      <div className="text-white hover:text-[#ff4b1f] text-2xl  flex justify-center pt-5 uppercase pb-10">
         Contact
       </div>
       <div
@@ -39,7 +39,7 @@ import Modal from "./Modal";
 
         <button className="py-[7px] px-[34px] lg:px-[50px]  border-2 border-[#80d0c7]">
           <a
-            href="https://github.com/Princessayomide53?tab=repositories"
+            href="https://github.com/Princessayomide53"
             target="_blank"
             rel="noopener noreferrer"
             className="flex mt-1 gap-3 mr-7 lg:mr-0"

@@ -47,7 +47,7 @@ function Header() {
             className="text-justify hidden sm:hidden lg:block md:hidden"
             id="hash-link-about"
           >
-            <p className="text-justify  lg:text-base text-sm md:text-base lg:mt-2 mt-1 lg:leading-9 leading-7 flex-wrap space-y-5 pr-5">
+            <p className="text-justify  lg:text-base text-sm md:text-base lg:mt-2 mt-1 lg:leading-8 leading-7 flex-wrap space-y-5 pr-5">
               I'm Princess, a Frontend Developer based in Lagos, Nigeria. I have
               substantial <br />
               knowledge of HTML, CSS, JavaScript and React. I am highly
@@ -62,7 +62,7 @@ function Header() {
             className="lg:hidden md:block block md:pl-16 md:pr-20 pl-5 pr-5"
             id="hash-link-about"
           >
-            <p className="text-justify lg:text-base text-sm md:text-base lg:mt-2 mt-1 leading-8  md:leading-9 flex-wrap md:space-y-14 pr-5">
+            <p className="text-justify lg:text-base text-sm md:text-base lg:mt-2 mt-1 leading-7  md:leading-9 flex-wrap md:space-y-14 pr-5">
               A Frontend Developer based in Lagos, Nigeria. I have
               substantial knowledge of HTML, CSS, JavaScript and React. I am
               highly motivated to expand my skills and i'm available to create

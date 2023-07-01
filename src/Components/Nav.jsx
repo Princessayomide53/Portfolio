@@ -62,6 +62,12 @@ function Nav() {
           <div className=" pl-7 pt-2">
             <h2 className="text1 text-4xl font-bold ">PA.</h2>
           </div>
+          <div className='mt-[7px]'>
+      <label class="switch">
+    <input type="checkbox" />
+    <span class="slider"></span>
+</label>
+</div>
           <div className="mr-7">
             <Hamburger
               direction="squash"

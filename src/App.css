@@ -20,43 +20,51 @@ clip-path: polygon(56% 0, 100% 0%, 100% 100%, 10% 100%);
 } */
 
 .Nav {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .Form {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .Header {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .Aboutus {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .Project {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+.Contact {
+  font-family: "Montserrat", sans-serif;
 }
 
 .text1 {
-  background: linear-gradient(to right, #0093e9 20%, #80d0c7 40%, #ff4b1f 60%, #1fddff 80%);
+  background: linear-gradient(
+    to right,
+    #0093e9 20%,
+    #80d0c7 40%,
+    #ff4b1f 60%,
+    #1fddff 80%
+  );
   background-size: 200% auto;
-color: #000;
-
+  color: #000;
 
   animation: gradients 7s ease infinite;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-
 }
 @keyframes gradients {
   0% {
     background-position: 0% 50%;
   }
 
-  50%{
+  50% {
     background-position: 100% 50%;
   }
 
@@ -81,63 +89,6 @@ color: #000;
   z-index: 1;
 }
 
-.burger-menu {
-  height: 98%;
-  width: 3em;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: space-between;
-  cursor: pointer;
-  /* background-color: purple; */
-}
-
-.burger-bar{
-  width: 2.5em;
-  height: 0.5em;
-  background-color: white;
-  border-radius: 0.5em;
-  overflow: hidden;
-  /* padding-right: 10px; */
-}
-
- .menu {
-  width: 100%;
-  height: 100vh;
-  background-color: black;
-  position: absolute;
-  top: 0;
-   z-index: 1; 
-} 
-
-.hidden1 {
-  display: none;
-}
-
-.visible {
-  display: inherit;
-}
-
-.burger-bar.clicked:nth-child(1) {
-  transform: rotate(45deg) translate(0.75em, 1.25em);
-  transition: ease-out 0.5s;
-}
-
-.burger-bar.clicked:nth-child(2) {
-  transform: scale(0.1);
-  transition: ease-out 0.5s;
-}
-
-.burger-bar.clicked:nth-child(3) {
-  transform: rotate(135deg) translate(-0.5em, 1em);
-  transition: ease-out 0.5s;
-}
-
-.burger-bar.unclicked{
-  transform: rotate(0) translate(0);
-  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
-}
-
 .slide-in-left {
   animation-name: slideInFromLeft;
   animation-duration: 2s;
@@ -145,79 +96,74 @@ color: #000;
 }
 
 @keyframes slideInFromLeft {
-  from { transform: translateX(-100%);}
-  to { transform: translateX(0%); }
-
-  
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
 }
-
 
 .modal {
   margin-top: 0px;
 }
 
-
-
-/* Loading CSS  */
-
-.loader,
-.loader:before,
-.loader:after {
-  background: #ffffff;
-  -webkit-animation: load1 1s infinite ease-in-out;
-  animation: load1 1s infinite ease-in-out;
-  width: 1em;
-  height: 4em;
-}
-.loader {
-  color: #ffffff;
-  text-indent: -9999em;
-  margin: 88px auto;
+.card {
+  width: 190px;
+  height: 65px;
+  background: #020b11;
   position: relative;
-  font-size: 11px;
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-animation-delay: -0.16s;
-  animation-delay: -0.16s;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 20px;
 }
-.loader:before,
-.loader:after {
+
+.card h2 {
+  z-index: 1;
+  color: white;
+  font-size: 16px;
+}
+
+.card::before {
+  content: "";
   position: absolute;
-  top: 0;
-  content: '';
+  width: 185px;
+  background-image: linear-gradient(
+    180deg,
+    rgb(0, 183, 255),
+    rgb(255, 48, 255)
+  );
+  height: 60%;
+  animation: rotBGimg 3s linear infinite;
+  transition: all 0.3s linear;
 }
-.loader:before {
-  left: -1.5em;
-  -webkit-animation-delay: -0.32s;
-  animation-delay: -0.32s;
-}
-.loader:after {
-  left: 1.5em;
-}
-@-webkit-keyframes load1 {
-  0%,
-  80%,
-  100% {
-    box-shadow: 0 0;
-    height: 4em;
+
+@keyframes rotBGimg {
+  from {
+    transform: rotate(0deg);
   }
-  40% {
-    box-shadow: 0 -2em;
-    height: 5em;
+
+  to {
+    transform: rotate(360deg);
   }
 }
-@keyframes load1 {
-  0%,
-  80%,
-  100% {
-    box-shadow: 0 0;
-    height: 4em;
-  }
-  40% {
-    box-shadow: 0 -2em;
-    height: 5em;
-  }
+
+.card::after {
+  content: "";
+  position: absolute;
+  background: #020b11;
+  inset: 5px;
+  border-radius: 15px;
+}
+
+.projects {
+  transform-origin: right bottom;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.projects:hover {
+  rotate: 8deg;
 }
 
 /* The switch - the box around the slider */
@@ -246,7 +192,7 @@ color: #000;
   right: 0;
   bottom: 0;
   background-color: var(--background);
-  transition: .5s;
+  transition: 0.5s;
   border-radius: 30px;
 }
 
@@ -260,7 +206,7 @@ color: #000;
   bottom: 15%;
   box-shadow: inset 8px -4px 0px 0px #fff000;
   background: var(--background);
-  transition: .5s;
+  transition: 0.5s;
 }
 
 input:checked + .slider {

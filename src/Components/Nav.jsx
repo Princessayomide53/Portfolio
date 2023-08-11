@@ -1,59 +1,60 @@
-import React, { useState } from 'react'
-import '../App.css'
-import { motion } from "framer-motion"
-// import { HashLink } from "react-router-hash-link";
-import {  Squash as Hamburger } from 'hamburger-react';
-
+import React, { useState, useContext } from "react";
+import "../App.css";
+import { motion } from "framer-motion";
+import { ThemeContext } from "./ThemeContext";
+import { Squash as Hamburger } from "hamburger-react";
 
 function Nav() {
+  const [open, setOpen] = useState(false);
 
-    const [open, setOpen] = useState(false);
+  const handleClick = () => {
+    setOpen(false);
+  };
 
-   const handleClick= () => {
-     setOpen(false);
-   };
-  
-  const animateFrom = {opacity: 0, x: -40}
+  const { theme, toggleTheme } = useContext(ThemeContext);
+
+  const animateFrom = { opacity: 0, x: -40 };
   const animateTo = { opacity: 1, x: 0 };
   return (
-    <div className="relative Nav">
-      <div className="lg:flex justify-between hidden bg-black lg:fixed w-full z-10">
-        <div className="flex justify-between p-3  pl-5">
-          <h2 className="text1 text-4xl font-bold ml-6">PA.</h2>
-        </div>
+    <div>
+      <div className="relative Nav">
+        <div className="bg-[#020b11] lg:flex justify-between hidden lg:fixed w-full z-10">
+          <div className="flex justify-between p-3  pl-5">
+            <h2 className="text1 text-4xl font-bold ml-6">PA.</h2>
+          </div>
 
-        <div className=" text-white text-base z-10 lg:block hidden pt-5">
-      
-          <ul className="flex space-x-16 lg:pr-10 font-bold">
-          <div className='-m-1'>
-      <label class="switch">
-    <input type="checkbox" />
-    <span class="slider"></span>
-</label>
-</div>
-            <li className="hover:text-base hover:text-[#ff4b1f]">
-              <a smooth="true" href="#hash-link-about">
-                About me
-              </a>
-            </li>
-            <li className="hover:text-base hover:text-[#ff4b1f]">
-              <a smooth="true" href="#hash-link-technologies">
-                Technologies
-              </a>
-            </li>
+          <div className=" text-white text-base z-10 lg:block hidden pt-5">
+            <ul className="flex space-x-16 lg:pr-10 font-bold">
+              <div className="-m-1">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider" onClick={toggleTheme}></span>
+                </label>
+              </div>
+              <li className="hover:text-base hover:text-[#ff4b1f]">
+                <a smooth="true" href="#hash-link-about">
+                  About me
+                </a>
+              </li>
+              <li className="hover:text-base hover:text-[#ff4b1f]">
+                <a smooth="true" href="#hash-link-technologies">
+                  Technologies
+                </a>
+              </li>
 
-            <li className="hover:text-base hover:text-[#ff4b1f]">
-              <a smooth="true" href="#hash-link-projects">
-                Projects
-              </a>
-            </li>
+              <li className="hover:text-base hover:text-[#ff4b1f]">
+                <a smooth="true" href="#hash-link-projects">
+                  Projects
+                </a>
+              </li>
 
-            <li className="hover:text-base hover:text-[#ff4b1f]">
-              <a smooth="true" href="#hash-link-calls">
-                Contacts
-              </a>
-            </li>
-          </ul>
+              <li className="hover:text-base hover:text-[#ff4b1f]">
+                <a smooth="true" href="#hash-link-calls">
+                  Contacts
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
 
@@ -62,12 +63,12 @@ function Nav() {
           <div className=" pl-7 pt-2">
             <h2 className="text1 text-4xl font-bold ">PA.</h2>
           </div>
-          <div className='mt-[7px]'>
-      <label class="switch">
-    <input type="checkbox" />
-    <span class="slider"></span>
-</label>
-</div>
+          <div className="mt-[7px]">
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider"></span>
+            </label>
+          </div>
           <div className="mr-7">
             <Hamburger
               direction="squash"
@@ -133,6 +134,7 @@ function Nav() {
           </div>
         )}
       </div>
+      {/* </div> */}
 
       {/* <div className="wrap lg:hidden md:block  block">
         <div className="nav1 flex justify-between mt-20">

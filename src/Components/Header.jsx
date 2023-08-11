@@ -19,10 +19,10 @@ function Header() {
 
   const [openModal, setOpenModal] = useState(false);
   return (
-    <div className="bg-black  Header">
+    <div className=" Header">
       <Nav />
       <div className="flex justify-between ">
-        <div className="text-white lg:pt-36 pt-32 pl-5 lg:pl-12 space-y-10">
+        <div className=" lg:pt-36 pt-32 pl-5 lg:pl-12 space-y-10">
           <div
           //  data-aos="fade-right"
           //  data-aos-offset="300"
@@ -75,14 +75,14 @@ function Header() {
             id="hash-link-template"
           >
             <button
-              className="px-10 text-base flex gap-3 py-3 border-2 border-[#80d0c7] hover:bg-[#80d0c7]  text-white "
+              className="px-10 text-base flex gap-3 py-3 border-2 border-[#80d0c7] hover:bg-[#80d0c7]  "
               // id="hash-link-contactme"
               onClick={() => setOpenModal(true)}
             >
               Say Hi <AiOutlineArrowRight className="pt-[5px] w-5 h-5" />
             </button>
 
-            <button className="px-10 text-base flex gap-3 lg:py-2 py-3 border-2 border-[#80d0c7] hover:bg-[#80d0c7]  text-white ">
+            <button className="px-10 text-base flex gap-3 lg:py-2 py-3 border-2 border-[#80d0c7] hover:bg-[#80d0c7] ">
               <a href={Resume} download="Resume" className="flex gap-3">
                 Download Resume{" "}
                 <AiOutlineDownload className="pt-[5px] w-5 h-5" />

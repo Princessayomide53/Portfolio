@@ -10,7 +10,7 @@ import React1 from "./Img/React1.png";
 function Technologies() {
   return (
     <div className="Aboutus" id="hash-link-technologies">
-      <div className="lg:pt-28 pt-20 md:pt-20 flex justify-center">
+      <div className="lg:pt-28 pt-20 md:pt-20 flex justify-center mb-8 lg:mb-8">
         <div className="card">
           <h2 className=" text-base font-semibold hover:text-[#ff4b1f] ">
             TECHNOLOGIES

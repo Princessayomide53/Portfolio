@@ -59,7 +59,7 @@ function Nav() {
       </div>
 
       <div className="lg:hidden block fixed z-50">
-        <div className="flex justify-between bg-black pt-2 pb-2 fixed w-full z-10 rounded-full border-2 border-slate-600 mt-2">
+        <div className="flex justify-between bg-[#020b11] pt-2 pb-2 fixed w-full z-10 rounded-full border-2 border-slate-600 mt-2">
           <div className=" pl-7 pt-2">
             <h2 className="text1 text-4xl font-bold ">PA.</h2>
           </div>

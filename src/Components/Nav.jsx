@@ -25,12 +25,12 @@ function Nav() {
 
           <div className=" text-white text-base z-10 lg:block hidden pt-5">
             <ul className="flex space-x-16 lg:pr-10 font-bold">
-              <div className="-m-1">
+              {/* <div className="-m-1">
                 <label class="switch">
                   <input type="checkbox" />
                   <span class="slider" onClick={toggleTheme}></span>
                 </label>
-              </div>
+              </div> */}
               <li className="hover:text-base hover:text-[#ff4b1f]">
                 <a smooth="true" href="#hash-link-about">
                   About me
@@ -58,17 +58,17 @@ function Nav() {
         </div>
       </div>
 
-      <div className="lg:hidden block fixed z-10">
+      <div className="lg:hidden block fixed z-50">
         <div className="flex justify-between bg-black pt-2 pb-2 fixed w-full z-10 rounded-full border-2 border-slate-600 mt-2">
           <div className=" pl-7 pt-2">
             <h2 className="text1 text-4xl font-bold ">PA.</h2>
           </div>
-          <div className="mt-[7px]">
+          {/* <div className="mt-[7px]">
             <label class="switch">
               <input type="checkbox" />
               <span class="slider"></span>
             </label>
-          </div>
+          </div> */}
           <div className="mr-7">
             <Hamburger
               direction="squash"
@@ -134,29 +134,6 @@ function Nav() {
           </div>
         )}
       </div>
-      {/* </div> */}
-
-      {/* <div className="wrap lg:hidden md:block  block">
-        <div className="nav1 flex justify-between mt-20">
-          <div className=" pl-7 pt-2">
-            <h2 className="text1 text-4xl font-bold ">PA.</h2>
-          </div>
-          <div className="burger-menu" onClick={updateMenu}>
-            <div className={burger_class}></div>
-            <div className={burger_class}></div>
-            <div className={burger_class}></div>
-          </div>
-        </div>
-
-        <div className="w-full h-full">
-          <div className={menu_class}>
-            <div className="text-white">
-              
-                
-            </div>
-          </div>
-        </div> */}
-      {/* </div> */}
     </div>
   );
 }

@@ -23,16 +23,12 @@ function Header() {
       <Nav />
       <div className="flex justify-between ">
         <div className=" lg:pt-36 pt-32 pl-5 lg:pl-12 space-y-10">
-          <div
-          //  data-aos="fade-right"
-          //  data-aos-offset="300"
-          //  data-aos-easing="ease-in-sine"
-          >
+          <div>
             <h3 className="font-bold text-lg leading-8 font-serif pl-4 md:pl-16 lg:pl-0">
               Hey, I'm
             </h3>
 
-            <h1 className="slide-in-left lg:text-5xl pl-4 text-4xl font-bold leading-8 font-serif mt-10 pb-8 z-10 text1 md:pl-16 lg:pl-0">
+            <h1 className="slide-in-left text1 lg:text-5xl pl-4 text-4xl font-bold leading-8 font-serif mt-10 pb-8 z-10 md:pl-16 lg:pl-0">
               Princess Ayomide Ogunnaike
             </h1>
           </div>
@@ -52,7 +48,8 @@ function Header() {
               substantial <br />
               knowledge of HTML, CSS, JavaScript React and Next. I am highly
               motivated to expand
-              <br /> my skills and i'm available to create solutions and one of a kind platforms for clients.
+              <br /> my skills and i'm available to create solutions and one of
+              a kind platforms for clients.
               {/* <br /> new technologies, opportunies and interesting projects. I
             love to be challenged */}
             </p>
@@ -63,9 +60,9 @@ function Header() {
             id="hash-link-about"
           >
             <p className="text-justify lg:text-base text-sm md:text-base lg:mt-2 mt-1 leading-7  md:leading-9 flex-wrap md:space-y-14 pr-5">
-              A Frontend Developer based in Lagos, Nigeria. I have
-              substantial knowledge of HTML, CSS, JavaScript, React and Next. I am
-              highly motivated to expand my skills and i'm available to create
+              A Frontend Developer based in Lagos, Nigeria. I have substantial
+              knowledge of HTML, CSS, JavaScript, React and Next. I am highly
+              motivated to expand my skills and i'm available to create
               solutions and one of a kind platforms for clients
             </p>
           </div>
@@ -75,14 +72,14 @@ function Header() {
             id="hash-link-template"
           >
             <button
-              className="px-10 text-base flex gap-3 py-3 border-2 border-[#80d0c7] hover:bg-[#80d0c7]  "
+              className="px-10 text-base flex gap-3 py-3 border-2 z-20 border-gradient "
               // id="hash-link-contactme"
               onClick={() => setOpenModal(true)}
             >
               Say Hi <AiOutlineArrowRight className="pt-[5px] w-5 h-5" />
             </button>
 
-            <button className="px-10 text-base flex gap-3 lg:py-2 py-3 border-2 border-[#80d0c7] hover:bg-[#80d0c7] ">
+            <button className="px-10 text-base flex gap-3 lg:py-2 py-3 border-2 border-gradient z-20 hover:bg-[button]">
               <a href={Resume} download="Resume" className="flex gap-3">
                 Download Resume{" "}
                 <AiOutlineDownload className="pt-[5px] w-5 h-5" />

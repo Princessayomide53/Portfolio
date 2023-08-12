@@ -24,23 +24,18 @@ function Projects() {
     <section>
       <div className=" Projects">
         <div
-          className="flex flex-col items-center pt-24 gap-14 lg:mb-5"
+          className="flex flex-col items-center pt-24 gap-14 lg:mb-5  mb-8"
           id="hash-link-projects"
         >
           <div className="card">
-            <p className="text-white z-20 lg:mb-0 mb-8 uppercase font-medium hover:text-[#ff4b1f]">
+            <p className="text-white z-20 lg:mb-0 uppercase font-medium hover:text-[#ff4b1f]">
               Projects
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 lg:gap-20 p-10 grid-cols-1 space-y-14 -mt-12 lg:space-y-0 md:ml-12 md:mr-12 lg:m-0">
+          <div className="grid lg:grid-cols-2 lg:gap-16 p-10 grid-cols-1 space-y-14 -mt-12 lg:space-y-0 md:ml-12 md:mr-12 lg:m-0">
             <div>
-              <div
-                data-aos="fade-down-right"
-                // data-aos-offset="100"
-                // data-aos-easing="ease-in-sine"
-                className=" projects"
-              >
+              <div className=" projects">
                 <a
                   href="https://medical-system.vercel.app/"
                   target="_blank"
@@ -53,8 +48,8 @@ function Projects() {
                   />
                 </a>
               </div>
-              <div className="flex justify-between">
-                <h1 className="text-white text-xl pt-1">Cornea Clinic</h1>
+              <div className="flex justify-between pt-3">
+                <h1 className="text-white text-xl">Cornea Clinic</h1>
                 <a
                   href="https://medical-system.vercel.app/"
                   target="_blank"
@@ -74,12 +69,7 @@ function Projects() {
             </div>
 
             <div>
-              <div
-                data-aos="zoom-in-down"
-                // data-aos-offset="100"
-                // data-aos-easing="ease-in-sine"
-                className="projects "
-              >
+              <div className="projects ">
                 <a
                   href="https://www.repute.legal/"
                   target="_blank"
@@ -92,7 +82,7 @@ function Projects() {
                   />
                 </a>
               </div>
-              <div className="flex justify-between">
+              <div className="flex justify-between pt-3">
                 <h1 className="text-white text-xl">Repute</h1>
                 <a
                   href="https://www.repute.legal/"
@@ -113,12 +103,7 @@ function Projects() {
             </div>
 
             <div>
-              <div
-                data-aos="flip-right"
-                // data-aos-offset="100"
-                // data-aos-easing="ease-in-sine"
-                className="projects"
-              >
+              <div className="projects">
                 <a
                   href="https://metabnb1.netlify.app/"
                   target="_blank"
@@ -131,7 +116,7 @@ function Projects() {
                   />
                 </a>
               </div>
-              <div className="flex justify-between">
+              <div className="flex justify-between pt-3">
                 <h1 className="text-white text-xl">Metabnb</h1>
                 <a
                   href="metabnb.netlify.app"
@@ -151,12 +136,7 @@ function Projects() {
             </div>
 
             <div>
-              <div
-                data-aos="zoom-out"
-                // data-aos-offset="100"
-                // data-aos-easing="ease-in-sine"
-                className=" projects"
-              >
+              <div className=" projects">
                 <a
                   href="http://kababrestro.netlify.app"
                   target="_blank"
@@ -169,7 +149,7 @@ function Projects() {
                   />
                 </a>
               </div>
-              <div className="flex justify-between">
+              <div className="flex justify-between pt-3">
                 <h1 className="text-white text-xl">Kabab Restro</h1>
                 <a
                   href="http://kababrestro.netlify.app"
@@ -190,12 +170,7 @@ function Projects() {
             </div>
 
             <div>
-              <div
-                data-aos="fade-down"
-                // data-aos-offset="100"
-                // data-aos-easing="ease-in-sine"
-                className="projects"
-              >
+              <div className="projects">
                 <a
                   href="https://themovieshome.netlify.app/"
                   target="_blank"
@@ -208,7 +183,7 @@ function Projects() {
                   />
                 </a>
               </div>
-              <div className="flex justify-between mt-[5px]">
+              <div className="flex justify-between pt-3 mt-[5px]">
                 <h1 className="text-white text-xl">Movies Home</h1>
                 <a
                   href="https://themovieshome.netlify.app/"
@@ -226,12 +201,7 @@ function Projects() {
             </div>
 
             <div>
-              <div
-                data-aos="zoom-in"
-                // data-aos-offset="300"
-                // data-aos-easing="ease-in-sine"
-                className="projects"
-              >
+              <div className="projects">
                 <a
                   href="https://teslalandingpage.netlify.app/"
                   target="_blank"
@@ -244,7 +214,7 @@ function Projects() {
                   />
                 </a>
               </div>
-              <div className="flex justify-between">
+              <div className="flex justify-between pt-3">
                 <h1 className="text-white text-xl">Tesla</h1>
                 <a
                   href="https://teslalandingpage.netlify.app/"

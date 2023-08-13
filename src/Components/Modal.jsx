@@ -115,9 +115,9 @@ function Modal({ open, onClose }) {
       <form noValidate ref={form} onSubmit={handleSubmit}>
         <div
           class="modal"
-          className="flex flex-col mt-0 justify-center z-10 items-center ml-0 fixed bg-[#2e2b2b] bg-opacity-60 inset-0 w-full h-screen"
+          className="flex flex-col mt-0 justify-center z-50 items-center ml-0 fixed bg-[#2e2b2b] bg-opacity-60 inset-0 w-full h-screen"
         >
-          <div className="bg-black lg:w-[70%] md:w-[80%] w-full h-screen  rounded-md">
+          <div className="bg-black lg:w-[70%] md:w-[80%] w-full h-screen  rounded-md z-20">
             <div className="flex justify-end lg:mt-2 mt-1 pr-5 text-3xl z-10 mb-2">
               <button className="text-white" onClick={onClose}>
                 X

@@ -6,6 +6,7 @@ import Hackthon from "./Img/Hackthon.png";
 import "../App.css";
 import Metabnbb from "./Img/Metabnbb 1.png";
 import Repute from "./Img/Repute.png";
+import mobile1 from "./Img/mobile1.png";
 import { TiAttachmentOutline } from "react-icons/ti";
 import { useEffect } from "react";
 import AOS from "aos";
@@ -34,6 +35,40 @@ function Projects() {
           </div>
 
           <div className="grid lg:grid-cols-2 lg:gap-16 p-10 grid-cols-1 space-y-14 -mt-12 lg:space-y-0 md:ml-12 md:mr-12 lg:m-0">
+            <div>
+              <div className=" projects">
+                <a
+                  href="https://food-app-ivory-six.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={mobile1}
+                    alt=""
+                    className="md:w-full lg:w-[700px] rounded-lg"
+                  />
+                </a>
+              </div>
+              <div className="flex justify-between pt-3">
+                <h1 className="text-white text-xl">A food Order App</h1>
+                <a
+                  href="https://medical-system.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <TiAttachmentOutline style={style} />
+                </a>
+              </div>
+              <p className="text-white mt-[10px]">
+                This is a Food Order App that enables you to add whatever food
+                you want to cart and make an order and you can also remove foods
+                added to cart too <br />
+                <span className="text-[#0093e9] mt-[6px]">
+                  React - TailwindCSS
+                </span>
+              </p>
+            </div>
+
             <div>
               <div className=" projects">
                 <a

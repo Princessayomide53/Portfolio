@@ -24,7 +24,7 @@ function Projects() {
 
   return (
     <section>
-      <div className=" Projects">
+      <div className=" Projects max-w-[95rem] mx-auto">
         <div
           className="flex flex-col items-center pt-24 gap-14 lg:mb-5  mb-8"
           id="hash-link-projects"

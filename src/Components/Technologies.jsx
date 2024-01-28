@@ -9,7 +9,10 @@ import React1 from "./Img/React1.png";
 
 function Technologies() {
   return (
-    <div className="Aboutus" id="hash-link-technologies">
+    <div
+      className="Aboutus xl:max-w-[95rem] mx-auto"
+      id="hash-link-technologies"
+    >
       <div className="lg:pt-28 pt-20 md:pt-20 flex justify-center mb-8 lg:mb-8">
         <div className="card">
           <h2 className=" text-base font-semibold hover:text-[#ff4b1f] ">
@@ -18,7 +21,7 @@ function Technologies() {
         </div>
       </div>
 
-      <div className="lg:flex pl-10 md:pl-20 lg:pl-3 lg:pr-3 lg:justify-around grid grid-cols-3 md:gap-36 gap-8 p-5 lg:p-0 mt-10">
+      <div className="lg:flex pl-10 md:pl-20 lg:px-7 lg:justify-around grid grid-cols-3 md:gap-36 lg:gap-24 xl:gap-36 gap-8 p-5 lg:p-0 mt-10">
         <img src={HTML5} alt="" className="w-18 h-12" />
         <img src={Css} alt="" className="w-18 h-12" />
         <img src={tailwind} alt="" className="w-[75px] h-10" />

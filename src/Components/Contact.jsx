@@ -9,7 +9,7 @@ import Modal from "./Modal";
 function Contact() {
   const [openModal, setOpenModal] = useState(false);
   return (
-    <div className="">
+    <div className="max-w-[95rem] mx-auto">
       <div className="flex justify-center pt-5 pb-10">
         <div className="card">
           <h2 className="hover:text-[#ff4b1f] uppercase font-semibold Contact">

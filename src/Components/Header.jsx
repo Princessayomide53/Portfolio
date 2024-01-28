@@ -19,9 +19,9 @@ function Header() {
 
   const [openModal, setOpenModal] = useState(false);
   return (
-    <div className=" Header">
+    <div className=" Header ">
       <Nav />
-      <div className="flex justify-between ">
+      <div className="flex justify-between max-w-[95rem] mx-auto">
         <div className=" lg:pt-36 pt-32 pl-5 lg:pl-12 space-y-10">
           <div>
             <h3 className="font-bold text-lg leading-8 font-serif pl-4 md:pl-16 lg:pl-0">

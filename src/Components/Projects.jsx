@@ -42,7 +42,7 @@ function Projects() {
             <div>
               <div className=" projects">
                 <a
-                  href="https://feedxpay.com/business"
+                  href="https://replica-of-flakes.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -58,7 +58,7 @@ function Projects() {
                   A Stunning Portfolio Website for a Product Designer
                 </h1>
                 <a
-                  href="https://ellorn.vercel.app/"
+                  href="https://replica-of-flakes.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

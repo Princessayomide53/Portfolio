@@ -6,6 +6,9 @@ import Hackthon from "./Img/Hackthon.png";
 import "../App.css";
 import Metabnbb from "./Img/Metabnbb 1.png";
 import Repute from "./Img/Repute.png";
+import feedxpay from "./Img/feedxpay.png";
+import Flakes from "./Img/Flakes.gif";
+import axiaafrica from "./Img/axiaafrica.png";
 import mobile1 from "./Img/mobile1.png";
 import mobile2 from "./Img/mobile2.png";
 import { TiAttachmentOutline } from "react-icons/ti";
@@ -36,6 +39,120 @@ function Projects() {
           </div>
 
           <div className="grid lg:grid-cols-2 lg:gap-16 p-10 grid-cols-1 space-y-14 -mt-12 lg:space-y-0 md:ml-12 md:mr-12 lg:m-0">
+            <div>
+              <div className=" projects">
+                <a
+                  href="https://feedxpay.com/business"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={Flakes}
+                    alt=""
+                    className="md:w-full lg:w-[700px] rounded-lg"
+                  />
+                </a>
+              </div>
+              <div className="flex justify-between pt-3">
+                <h1 className="text-white text-xl">
+                  A Stunning Portfolio Website for a Product Designer
+                </h1>
+                <a
+                  href="https://ellorn.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <TiAttachmentOutline style={style} />
+                </a>
+              </div>
+              <p className="text-white mt-[10px]">
+                I developed a portfolio website for a product designer using
+                ReactJS. The main goal was to create a visually appealing and
+                user-friendly platform to showcase the designer's projects and
+                provide easy contact options, especially via email. <br />
+                <span className="text-[#0093e9] mt-[6px]">
+                  React - TailwindCSS - gsap - framer
+                </span>
+              </p>
+            </div>
+
+            <div>
+              <div className=" projects">
+                <a
+                  href="https://feedxpay.com/business"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={feedxpay}
+                    alt=""
+                    className="md:w-full lg:w-[700px] rounded-lg"
+                  />
+                </a>
+              </div>
+              <div className="flex justify-between pt-3">
+                <h1 className="text-white text-xl">Feedxpay website</h1>
+                <a
+                  href="https://feedxpay.com/business"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <TiAttachmentOutline style={style} />
+                </a>
+              </div>
+              <p className="text-white mt-[10px]">
+                I spearheaded the development and optimization of the Feedxpay
+                website, dedicated to revolutionizing global finance. Focused on
+                providing innovative, efficient, and compliant solutions to
+                clients, I ensured seamless responsiveness across all devices
+                for optimal user experience. Additionally, I managed all backend
+                partnership inquiries and sales contacts while overseeing
+                frontend functionalities.
+                <br />
+                <span className="text-[#0093e9] mt-[6px]">
+                  React - TailwindCSS
+                </span>
+              </p>
+            </div>
+
+            <div>
+              <div className=" projects">
+                <a
+                  href="https://t4a.axia.africa/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={axiaafrica}
+                    alt=""
+                    className="md:w-full lg:w-[700px] rounded-lg"
+                  />
+                </a>
+              </div>
+              <div className="flex justify-between pt-3">
+                <h1 className="text-white text-xl">A Bootcamp Website</h1>
+                <a
+                  href="https://t4a.axia.africa/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <TiAttachmentOutline style={style} />
+                </a>
+              </div>
+              <p className="text-white mt-[10px]">
+                "Collaborating with a senior developer, I contributed to the TFA
+                Bootcamp project for Axia Africa, leveraging Vue.js with
+                TypeScript. My role encompassed crafting responsive designs
+                tailored to all screen sizes, ensuring optimal user experiences
+                across devices. Additionally, I focused on ensuring the seamless
+                functionality of the registration process."
+                <br />
+                <span className="text-[#0093e9] mt-[6px]">
+                  Vue - TailwindCSS - TypeScript
+                </span>
+              </p>
+            </div>
+
             <div>
               <div className=" projects">
                 <a

@@ -42,43 +42,6 @@ function Projects() {
             <div>
               <div className=" projects">
                 <a
-                  href="https://replica-of-flakes.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src={Flakes}
-                    alt=""
-                    className="md:w-full lg:w-[700px] rounded-lg"
-                  />
-                </a>
-              </div>
-              <div className="flex justify-between pt-3">
-                <h1 className="text-white text-xl">
-                  A Stunning Portfolio Website for a Product Designer
-                </h1>
-                <a
-                  href="https://replica-of-flakes.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <TiAttachmentOutline style={style} />
-                </a>
-              </div>
-              <p className="text-white mt-[10px]">
-                I developed a portfolio website for a product designer using
-                ReactJS. The main goal was to create a visually appealing and
-                user-friendly platform to showcase the designer's projects and
-                provide easy contact options, especially via email. <br />
-                <span className="text-[#0093e9] mt-[6px]">
-                  React - TailwindCSS - gsap - framer
-                </span>
-              </p>
-            </div>
-
-            <div>
-              <div className=" projects">
-                <a
                   href="https://feedxpay.com/business"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -149,6 +112,43 @@ function Projects() {
                 <br />
                 <span className="text-[#0093e9] mt-[6px]">
                   Vue - TailwindCSS - TypeScript
+                </span>
+              </p>
+            </div>
+
+            <div>
+              <div className=" projects">
+                <a
+                  href="https://replica-of-flakes.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={Flakes}
+                    alt=""
+                    className="md:w-full lg:w-[700px] rounded-lg"
+                  />
+                </a>
+              </div>
+              <div className="flex justify-between pt-3">
+                <h1 className="text-white text-xl">
+                  A Stunning Portfolio Website for a Product Designer
+                </h1>
+                <a
+                  href="https://replica-of-flakes.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <TiAttachmentOutline style={style} />
+                </a>
+              </div>
+              <p className="text-white mt-[10px]">
+                I developed a portfolio website for a product designer using
+                ReactJS. The main goal was to create a visually appealing and
+                user-friendly platform to showcase the designer's projects and
+                provide easy contact options, especially via email. <br />
+                <span className="text-[#0093e9] mt-[6px]">
+                  React - TailwindCSS - gsap - framer
                 </span>
               </p>
             </div>
